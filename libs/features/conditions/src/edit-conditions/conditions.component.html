@@ -32,17 +32,17 @@
           </div>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="SourceGroup">SourceGroup</label>
+              <label class="control-label" for="SourceGroup">源组</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="SOURCE_GROUP_TOOLTIPS[selectedSourceType] | translate"></i>
               <input [formControlName]="'SourceGroup'" id="SourceGroup" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="SourceEntry">SourceEntry</label>
+              <label class="control-label" for="SourceEntry">源条目</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="SOURCE_ENTRY_TOOLTIPS[selectedSourceType] | translate"></i>
               <input [formControlName]="'SourceEntry'" id="SourceEntry" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="SourceId">SourceId</label>
+              <label class="control-label" for="SourceId">源ID</label>
               <i
                 class="fas fa-info-circle ms-1"
                 [placement]="'auto'"
@@ -55,12 +55,12 @@
               <input [formControlName]="'SourceId'" id="SourceId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ElseGroup">ElseGroup</label>
+              <label class="control-label" for="ElseGroup">否则组</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'CONDITIONS.EDITOR.ELSE_GROUP' | translate"></i>
               <input [formControlName]="'ElseGroup'" id="ElseGroup" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ConditionTarget">ConditionTarget</label>
+              <label class="control-label" for="ConditionTarget">条件目标</label>
               <i
                 class="fas fa-info-circle ms-1"
                 [placement]="'auto'"
@@ -86,7 +86,7 @@
           </div>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ConditionValue1">ConditionValue1</label>
+              <label class="control-label" for="ConditionValue1">条件值1</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="CONDITION_VALUE_1_TOOLTIPS[conditionType] | translate"></i>
               @if (showTypeMask) {
                 <keira-flags-selector-btn
@@ -115,7 +115,7 @@
               <input [formControlName]="'ConditionValue1'" id="ConditionValue1" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ConditionValue2">ConditionValue2</label>
+              <label class="control-label" for="ConditionValue2">条件值2</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="CONDITION_VALUE_2_TOOLTIPS[conditionType] | translate"></i>
               @if (showQuestState) {
                 <keira-flags-selector-btn
@@ -178,7 +178,7 @@
               <input [formControlName]="'ConditionValue2'" id="ConditionValue2" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ConditionValue3">ConditionValue3</label>
+              <label class="control-label" for="ConditionValue3">条件值3</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="CONDITION_VALUE_3_TOOLTIPS[conditionType] | translate"></i>
               @if (showInstanceInfo) {
                 <keira-single-value-selector-btn
@@ -212,27 +212,27 @@
           <span class="category-title" [translate]="'CONDITIONS.EDITOR.OTHER_PROPERTIES'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="NegativeCondition">NegativeCondition</label>
+              <label class="control-label" for="NegativeCondition">负条件</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'CONDITIONS.EDITOR.NEGATIVE_CONDITION' | translate"></i>
               <input [formControlName]="'NegativeCondition'" id="NegativeCondition" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ErrorType">ErrorType</label>
+              <label class="control-label" for="ErrorType">错误类型</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'CONDITIONS.EDITOR.ERROR_TYPE' | translate"></i>
               <input [formControlName]="'ErrorType'" id="ErrorType" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ErrorTextId">ErrorTextId</label>
+              <label class="control-label" for="ErrorTextId">错误文本ID</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'CONDITIONS.EDITOR.ERROR_TEXT_ID' | translate"></i>
               <input [formControlName]="'ErrorTextId'" id="ErrorTextId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ScriptName">ScriptName</label>
+              <label class="control-label" for="ScriptName">脚本名称</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'CONDITIONS.EDITOR.SCRIPT_NAME' | translate"></i>
               <input [formControlName]="'ScriptName'" id="ScriptName" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6">
-              <label class="control-label" for="Comment">Comment</label>
+              <label class="control-label" for="Comment">注释</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'CONDITIONS.EDITOR.COMMENT' | translate"></i>
               <input [formControlName]="'Comment'" id="Comment" class="form-control form-control-sm" />
             </div>
