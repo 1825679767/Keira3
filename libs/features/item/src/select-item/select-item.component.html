@@ -17,14 +17,14 @@
       <div class="row">
         <ng-container [formGroup]="selectService.fields">
           <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <input [formControlName]="'entry'" type="number" class="form-control form-control-sm" id="search-id" placeholder="Item ID" />
+            <input [formControlName]="'entry'" type="number" class="form-control form-control-sm" id="search-id" placeholder="物品ID" />
           </div>
           <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-3">
-            <input [formControlName]="'name'" class="form-control form-control-sm" id="name" placeholder="Item name" />
+            <input [formControlName]="'name'" class="form-control form-control-sm" id="name" placeholder="物品名称" />
           </div>
         </ng-container>
         <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="Limit" />
+          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="限制数量" />
         </div>
         <div class="mb-2 col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <button id="search-btn" class="btn btn-primary btn-sm" [disabled]="selectService.queryForm.invalid" (click)="onSearch()">
@@ -55,24 +55,24 @@
               <keira-icon [itemDisplayId]="row.displayid" />
             </ng-template>
           </ngx-datatable-column>
-          <ngx-datatable-column name="ID">
+          <ngx-datatable-column name="编号">
             <ng-template let-row="row" ngx-datatable-cell-template>
               {{ row.entry }}
             </ng-template>
           </ngx-datatable-column>
-          <ngx-datatable-column name="Name" prop="name" [minWidth]="60">
+          <ngx-datatable-column name="名称" prop="name" [minWidth]="60">
             <ng-template let-row="row" ngx-datatable-cell-template>
               <div>
                 <b [class]="'item-quality-q' + row.Quality">{{ row.name }}</b>
               </div>
             </ng-template>
           </ngx-datatable-column>
-          <ngx-datatable-column name="DisplayID" prop="displayid" />
-          <ngx-datatable-column name="Class" prop="class" />
-          <ngx-datatable-column name="Subclass" prop="subclass" />
-          <ngx-datatable-column name="Quality" prop="Quality" />
-          <ngx-datatable-column name="ItemLevel" prop="ItemLevel" />
-          <ngx-datatable-column name="RequiredLevel" prop="RequiredLevel" />
+          <ngx-datatable-column name="显示ID" prop="displayid" />
+          <ngx-datatable-column name="类别" prop="class" />
+          <ngx-datatable-column name="子类" prop="subclass" />
+          <ngx-datatable-column name="品质" prop="Quality" />
+          <ngx-datatable-column name="物品等级" prop="ItemLevel" />
+          <ngx-datatable-column name="需求等级" prop="RequiredLevel" />
         </ngx-datatable>
       </div>
     }
