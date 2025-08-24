@@ -113,12 +113,12 @@
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <label class="control-label" for="BuyPrice">购买价格</label>
-              <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'从商人处购买的价格'"></i>
+              <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'ITEM.TEMPLATE.BUY_PRICE' | translate"></i>
               <input [formControlName]="'BuyPrice'" id="BuyPrice" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <label class="control-label" for="SellPrice">出售价格</label>
-              <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'出售给商人的价格'"></i>
+              <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'ITEM.TEMPLATE.SELL_PRICE' | translate"></i>
               <input [formControlName]="'SellPrice'" id="SellPrice" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
