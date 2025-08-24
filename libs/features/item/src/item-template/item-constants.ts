@@ -40,7 +40,7 @@ export const ITEM_CONSTANTS = {
   },
   socketBonus: '镶嵌奖励：%s', // ITEM_SOCKET_BONUS
   socket: [
-    '元能插槽',
+    '棱彩插槽',
     '红色插槽',
     '黄色插槽',
     '蓝色插槽',
@@ -48,7 +48,7 @@ export const ITEM_CONSTANTS = {
   ],
   gemColors: [
     // *_GEM
-    '元能',
+    '棱彩',
     '红色',
     '黄色',
     '蓝色',
