@@ -1,12 +1,12 @@
 import { Flag } from '@keira/shared/constants';
 
 export const DYNAMIC_FLAGS: Flag[] = [
-  { bit: 0, name: 'LOOTABLE' },
-  { bit: 1, name: 'TRACK_UNIT - Creature’s location will be seen as a small dot in the minimap' },
-  { bit: 2, name: 'TAPPED - Makes creatures name appear grey (Lua_UnitIsTapped)' },
-  { bit: 3, name: 'TAPPED_BY_PLAYER - Lua_UnitIsTappedByPlayer usually used by PCVs (Player Controlled Vehicles' },
-  { bit: 4, name: 'SPECIALINFO' },
-  { bit: 5, name: 'DEAD - Makes the creature appear dead (this DOES NOT make the creature’s name grey or not attack players).' },
-  { bit: 6, name: 'REFER_A_FRIEND' },
-  { bit: 7, name: 'TAPPED_BY_ALL_THREAT_LIST - Lua_UnitIsTappedByAllThreatList' },
+  { bit: 0, name: '可拾取' },
+  { bit: 1, name: '追踪单位 - 生物位置将在小地图上显示为小点' },
+  { bit: 2, name: '已标记 - 使生物名字显示为灰色 (Lua_UnitIsTapped)' },
+  { bit: 3, name: '被玩家标记 - Lua_UnitIsTappedByPlayer 通常用于玩家控制载具' },
+  { bit: 4, name: '特殊信息' },
+  { bit: 5, name: '死亡 - 使生物显示为死亡状态（这不会使生物名字变灰或停止攻击玩家）' },
+  { bit: 6, name: '招募好友' },
+  { bit: 7, name: '被所有仇恨列表标记 - Lua_UnitIsTappedByAllThreatList' },
 ];

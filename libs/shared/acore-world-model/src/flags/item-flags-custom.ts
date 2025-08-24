@@ -1,7 +1,7 @@
 import { Flag } from '@keira/shared/constants';
 
 export const ITEM_FLAGS_CUSTOM: Flag[] = [
-  { bit: 0, name: 'CU_DURATION_REAL_TIME' },
-  { bit: 1, name: 'CU_IGNORE_QUEST_STATUS' },
-  { bit: 2, name: 'CU_FOLLOW_LOOT_RULES' },
+  { bit: 0, name: '实时持续时间' },
+  { bit: 1, name: '忽略任务状态' },
+  { bit: 2, name: '遵循拾取规则' },
 ];

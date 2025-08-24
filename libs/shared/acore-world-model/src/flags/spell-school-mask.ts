@@ -1,11 +1,11 @@
 import { Flag } from '@keira/shared/constants';
 
 export const SPELL_SCHOOL_MASK: Flag[] = [
-  { bit: 0, name: 'SPELL_SCHOOL_NORMAL' },
-  { bit: 1, name: 'SPELL_SCHOOL_HOLY' },
-  { bit: 2, name: 'SPELL_SCHOOL_FIRE' },
-  { bit: 3, name: 'SPELL_SCHOOL_NATURE' },
-  { bit: 4, name: 'SPELL_SCHOOL_FROST' },
-  { bit: 5, name: 'SPELL_SCHOOL_SHADOW' },
-  { bit: 6, name: 'SPELL_SCHOOL_ARCANE' },
+  { bit: 0, name: '物理' },
+  { bit: 1, name: '神圣' },
+  { bit: 2, name: '火焰' },
+  { bit: 3, name: '自然' },
+  { bit: 4, name: '冰霜' },
+  { bit: 5, name: '暗影' },
+  { bit: 6, name: '奥术' },
 ];
