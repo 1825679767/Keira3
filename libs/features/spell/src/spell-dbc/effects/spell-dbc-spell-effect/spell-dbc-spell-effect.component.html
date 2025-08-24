@@ -4,7 +4,7 @@
       <span class="category-title" [translate]="'SPELL_DBC.SPELL_EFFECTS.EFFECT'"></span>
       <div class="row">
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('Effect')">{{ getFieldName('Effect') }}</label>
+          <label class="control-label" [for]="getFieldName('Effect')">法术效果</label>
           <keira-single-value-selector-btn
             [control]="formGroup.controls[getFieldName('Effect')]"
             [disabled]="formGroup.controls[getFieldName('Effect')].disabled"
@@ -20,7 +20,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectBasePoints')">{{ getFieldName('EffectBasePoints') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectBasePoints')">基础效果值</label>
           <i
             class="fas fa-info-circle ms-1"
             placement="auto"
@@ -34,9 +34,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectRealPointsPerLevel')">{{
-            getFieldName('EffectRealPointsPerLevel')
-          }}</label>
+          <label class="control-label" [for]="getFieldName('EffectRealPointsPerLevel')">每级实际效果值</label>
           <i
             class="fas fa-info-circle ms-1"
             placement="auto"
@@ -50,7 +48,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectRadiusIndex')">{{ getFieldName('EffectRadiusIndex') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectRadiusIndex')">效果范围索引</label>
           <i
             class="fas fa-info-circle ms-1"
             placement="auto"
@@ -64,7 +62,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectMultipleValue')">{{ getFieldName('EffectMultipleValue') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectMultipleValue')">效果倍数</label>
           <i
             class="fas fa-info-circle ms-1"
             placement="auto"
@@ -78,7 +76,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectMiscValue')">{{ getFieldName('EffectMiscValue') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectMiscValue')">效果杂项值A</label>
           <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'SPELL_DBC.SPELL_EFFECTS.FIELD.EFFECT_MISC_VALUE' | translate"></i>
           <input
             [formControlName]="getFieldName('EffectMiscValue')"
@@ -88,7 +86,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectMiscValueB')">{{ getFieldName('EffectMiscValueB') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectMiscValueB')">效果杂项值B</label>
           <i
             class="fas fa-info-circle ms-1"
             placement="auto"
@@ -102,7 +100,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectTriggerSpell')">{{ getFieldName('EffectTriggerSpell') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectTriggerSpell')">触发法术</label>
           <i
             class="fas fa-info-circle ms-1"
             placement="auto"
@@ -116,7 +114,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectItemType')">{{ getFieldName('EffectItemType') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectItemType')">效果物品类型</label>
           <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'TODO' | translate"></i>
           <input
             [formControlName]="getFieldName('EffectItemType')"
@@ -126,7 +124,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectPointsPerCombo')">{{ getFieldName('EffectPointsPerCombo') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectPointsPerCombo')">连击点数效果</label>
           <i
             class="fas fa-info-circle ms-1"
             placement="auto"
@@ -140,7 +138,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectDieSides')">{{ getFieldName('EffectDieSides') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectDieSides')">效果骰子面数</label>
           <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'SPELL_DBC.SPELL_EFFECTS.FIELD.EFFECT_DIE_SIDES' | translate"></i>
           <input
             [formControlName]="getFieldName('EffectDieSides')"
@@ -150,7 +148,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectChainAmplitude')">{{ getFieldName('EffectChainAmplitude') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectChainAmplitude')">连锁效果增幅</label>
           <i
             class="fas fa-info-circle ms-1"
             placement="auto"
@@ -164,7 +162,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectBonusMultiplier')">{{ getFieldName('EffectBonusMultiplier') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectBonusMultiplier')">效果加成倍数</label>
           <i
             class="fas fa-info-circle ms-1"
             placement="auto"
@@ -183,7 +181,7 @@
       <span class="category-title" [translate]="'SPELL_DBC.SPELL_EFFECTS.EFFECT_MECHANIC'"></span>
       <div class="row">
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectMechanic')">{{ getFieldName('EffectMechanic') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectMechanic')">效果机制</label>
           <keira-single-value-selector-btn
             [control]="formGroup.controls[getFieldName('EffectMechanic')]"
             [disabled]="formGroup.controls[getFieldName('EffectMechanic')].disabled"
@@ -204,7 +202,7 @@
       <span class="category-title" [translate]="'SPELL_DBC.SPELL_EFFECTS.EFFECT_AURA'"></span>
       <div class="row">
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectAura')">{{ getFieldName('EffectAura') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectAura')">光环效果</label>
           <keira-single-value-selector-btn
             [control]="formGroup.controls[getFieldName('EffectAura')]"
             [disabled]="formGroup.controls[getFieldName('EffectAura')].disabled"
@@ -221,7 +219,7 @@
         </div>
       </div>
       <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" [for]="getFieldName('EffectAuraPeriod')">{{ getFieldName('EffectAuraPeriod') }}</label>
+        <label class="control-label" [for]="getFieldName('EffectAuraPeriod')">光环持续时间</label>
         <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'SPELL_DBC.SPELL_EFFECTS.FIELD.EFFECT_AURA_PERIOD' | translate"></i>
         <input
           [formControlName]="getFieldName('EffectAuraPeriod')"
@@ -235,7 +233,7 @@
       <span class="category-title" [translate]="'SPELL_DBC.SPELL_EFFECTS.MISC'"></span>
       <div class="row">
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('SpellClassMask')">{{ getFieldName('SpellClassMask') }}</label>
+          <label class="control-label" [for]="getFieldName('SpellClassMask')">法术职业掩码</label>
           <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'SPELL_DBC.SPELL_EFFECTS.FIELD.SPELL_CLASS_MASK' | translate"></i>
           <input
             [formControlName]="getFieldName('SpellClassMask')"
@@ -245,7 +243,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('ImplicitTargetA')">{{ getFieldName('ImplicitTargetA') }}</label>
+          <label class="control-label" [for]="getFieldName('ImplicitTargetA')">隐含目标A</label>
           <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'SPELL_DBC.SPELL_EFFECTS.FIELD.IMPLICIT_TARGET_A' | translate"></i>
           <input
             [formControlName]="getFieldName('ImplicitTargetA')"
@@ -255,7 +253,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('ImplicitTargetB')">{{ getFieldName('ImplicitTargetB') }}</label>
+          <label class="control-label" [for]="getFieldName('ImplicitTargetB')">隐含目标B</label>
           <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'SPELL_DBC.SPELL_EFFECTS.FIELD.IMPLICIT_TARGET_B' | translate"></i>
           <input
             [formControlName]="getFieldName('ImplicitTargetB')"
@@ -265,7 +263,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectChainTargets')">{{ getFieldName('EffectChainTargets') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectChainTargets')">连锁目标数量</label>
           <i
             class="fas fa-info-circle ms-1"
             placement="auto"
@@ -279,7 +277,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectSpellClassMaskA')">{{ getFieldName('EffectSpellClassMaskA') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectSpellClassMaskA')">法术效果职业掩码A</label>
           <keira-flags-selector-btn
             [control]="formGroup.controls[getFieldName('EffectSpellClassMaskA')]"
             [disabled]="formGroup.controls[getFieldName('EffectSpellClassMaskA')].disabled"
@@ -298,7 +296,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectSpellClassMaskB')">{{ getFieldName('EffectSpellClassMaskB') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectSpellClassMaskB')">法术效果职业掩码B</label>
           <keira-flags-selector-btn
             [control]="formGroup.controls[getFieldName('EffectSpellClassMaskB')]"
             [disabled]="formGroup.controls[getFieldName('EffectSpellClassMaskB')].disabled"
@@ -317,7 +315,7 @@
           />
         </div>
         <div class="form-group ol-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <label class="control-label" [for]="getFieldName('EffectSpellClassMaskC')">{{ getFieldName('EffectSpellClassMaskC') }}</label>
+          <label class="control-label" [for]="getFieldName('EffectSpellClassMaskC')">法术效果职业掩码C</label>
           <keira-flags-selector-btn
             [control]="formGroup.controls[getFieldName('EffectSpellClassMaskC')]"
             [disabled]="formGroup.controls[getFieldName('EffectSpellClassMaskC')].disabled"
