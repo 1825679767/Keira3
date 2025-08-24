@@ -3,7 +3,7 @@
     <span class="category-title" [translate]="'SPELL_DBC.ITEMS.GENERAL'"></span>
     <div class="row">
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="EquippedItemClass">装备物品类别</label>
+        <label class="control-label" for="EquippedItemClass">EquippedItemClass</label>
         <keira-single-value-selector-btn
           [control]="formGroup.controls.EquippedItemClass"
           [disabled]="formGroup.controls.EquippedItemClass.disabled"
@@ -14,7 +14,7 @@
         <input [formControlName]="'EquippedItemClass'" id="EquippedItemClass" type="number" class="form-control form-control-sm" />
       </div>
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="EquippedItemSubclass">装备物品子类</label>
+        <label class="control-label" for="EquippedItemSubclass">EquippedItemSubclass</label>
         @if (
           formGroup.controls.EquippedItemClass &&
           formGroup.controls.EquippedItemClass.value !== null &&
@@ -32,7 +32,7 @@
         <input [formControlName]="'EquippedItemSubclass'" id="EquippedItemSubclass" type="number" class="form-control form-control-sm" />
       </div>
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="EquippedItemInvTypes">装备栏位类型</label>
+        <label class="control-label" for="EquippedItemInvTypes">EquippedItemInvTypes</label>
         <keira-flags-selector-btn
           [control]="formGroup.controls.EquippedItemInvTypes"
           [disabled]="formGroup.controls.EquippedItemInvTypes.disabled"
@@ -48,7 +48,7 @@
     <span class="category-title" [translate]="'SPELL_DBC.ITEMS.NON_CONSUMABLE_ITEMS'"></span>
     <div class="row">
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="Totem_1">图腾1</label>
+        <label class="control-label" for="Totem_1">Totem_1</label>
         <keira-item-selector-btn
           [control]="formGroup.controls.Totem_1"
           [disabled]="formGroup.controls.Totem_1.disabled"
@@ -59,7 +59,7 @@
       </div>
 
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="Totem_2">图腾2</label>
+        <label class="control-label" for="Totem_2">Totem_2</label>
         <keira-item-selector-btn
           [control]="formGroup.controls.Totem_2"
           [disabled]="formGroup.controls.Totem_2.disabled"
@@ -71,7 +71,7 @@
     </div>
     <div class="row">
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="RequiredTotemCategoryID_1">所需图腾类型1</label>
+        <label class="control-label" for="RequiredTotemCategoryID_1">RequiredTotemCategoryID_1</label>
         <keira-single-value-selector-btn
           [control]="formGroup.controls.RequiredTotemCategoryID_1"
           [disabled]="formGroup.controls.RequiredTotemCategoryID_1.disabled"
@@ -87,7 +87,7 @@
         />
       </div>
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="RequiredTotemCategoryID_2">所需图腾类型2</label>
+        <label class="control-label" for="RequiredTotemCategoryID_2">RequiredTotemCategoryID_2</label>
         <keira-single-value-selector-btn
           [control]="formGroup.controls.RequiredTotemCategoryID_2"
           [disabled]="formGroup.controls.RequiredTotemCategoryID_2.disabled"
@@ -110,7 +110,7 @@
       @for (i of [1, 2, 3, 4, 5, 6, 7, 8]; track i) {
         <div class="row">
           <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <label class="control-label" [for]="'Reagent_' + i">材料{{ i }}</label>
+            <label class="control-label" [for]="'Reagent_' + i">Reagent_{{ i }}</label>
             <keira-item-selector-btn
               [control]="formGroup.controls['Reagent_' + i]"
               [disabled]="formGroup.controls['Reagent_' + i].disabled"
@@ -120,7 +120,7 @@
             <input [formControlName]="'Reagent_' + i" [id]="'Reagent_' + i" type="number" class="form-control form-control-sm" />
           </div>
           <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <label class="control-label" [for]="'ReagentCount_' + i">材料数量{{ i }}</label>
+            <label class="control-label" [for]="'ReagentCount_' + i">ReagentCount_{{ i }}</label>
             <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'SPELL_DBC.ITEMS.REAGENT_COUNT' | translate"></i>
             <input [formControlName]="'ReagentCount_' + i" [id]="'ReagentCount_' + i" type="number" class="form-control form-control-sm" />
           </div>

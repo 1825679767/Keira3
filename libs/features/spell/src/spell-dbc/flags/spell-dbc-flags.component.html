@@ -3,7 +3,7 @@
     <span class="category-title" [translate]="'SPELL_DBC.FLAGS.GENERAL'"></span>
     <div class="row">
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="TargetCreatureType">目标生物类型</label>
+        <label class="control-label" for="TargetCreatureType">TargetCreatureType</label>
         <keira-flags-selector-btn
           [control]="formGroup().controls.TargetCreatureType"
           [disabled]="formGroup().controls.TargetCreatureType.disabled"
@@ -14,7 +14,7 @@
         <input [formControlName]="'TargetCreatureType'" id="TargetCreatureType" type="number" class="form-control form-control-sm" />
       </div>
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="ShapeshiftMask">变形状态掩码</label>
+        <label class="control-label" for="ShapeshiftMask">ShapeshiftMask</label>
         <keira-flags-selector-btn
           [control]="formGroup().controls.ShapeshiftMask"
           [disabled]="formGroup().controls.ShapeshiftMask.disabled"
@@ -25,7 +25,7 @@
         <input [formControlName]="'ShapeshiftMask'" id="ShapeshiftMask" type="number" class="form-control form-control-sm" />
       </div>
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="ShapeshiftExclude">变形状态排除</label>
+        <label class="control-label" for="ShapeshiftExclude">ShapeshiftExclude</label>
         <keira-flags-selector-btn
           [control]="formGroup().controls.ShapeshiftMask"
           [disabled]="formGroup().controls.ShapeshiftMask.disabled"
@@ -36,7 +36,7 @@
         <input [formControlName]="'ShapeshiftExclude'" id="ShapeshiftExclude" type="number" class="form-control form-control-sm" />
       </div>
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="FacingCasterFlags">面向施法者标志</label>
+        <label class="control-label" for="FacingCasterFlags">FacingCasterFlags</label>
         <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'SPELL_DBC.FLAGS.FACING_CASTER_FLAGS' | translate"></i>
         <keira-flags-selector-btn
           [control]="formGroup().controls.FacingCasterFlags"
@@ -51,7 +51,7 @@
     <span class="category-title" [translate]="'SPELL_DBC.FLAGS.INTERRUPT_FLAGS'"></span>
     <div class="row">
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="InterruptFlags">打断标志</label>
+        <label class="control-label" for="InterruptFlags">InterruptFlags</label>
         <keira-flags-selector-btn
           [control]="formGroup().controls.InterruptFlags"
           [disabled]="formGroup().controls.InterruptFlags.disabled"
@@ -62,7 +62,7 @@
         <input [formControlName]="'InterruptFlags'" id="InterruptFlags" type="number" class="form-control form-control-sm" />
       </div>
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="AuraInterruptFlags">光环打断标志</label>
+        <label class="control-label" for="AuraInterruptFlags">AuraInterruptFlags</label>
         <keira-flags-selector-btn
           [control]="formGroup().controls.AuraInterruptFlags"
           [disabled]="formGroup().controls.AuraInterruptFlags.disabled"
@@ -73,7 +73,7 @@
         <input [formControlName]="'AuraInterruptFlags'" id="AuraInterruptFlags" type="number" class="form-control form-control-sm" />
       </div>
       <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-        <label class="control-label" for="ChannelInterruptFlags">引导打断标志</label>
+        <label class="control-label" for="ChannelInterruptFlags">ChannelInterruptFlags</label>
         <keira-flags-selector-btn
           [control]="formGroup().controls.ChannelInterruptFlags"
           [disabled]="formGroup().controls.ChannelInterruptFlags.disabled"
@@ -97,7 +97,7 @@
             [config]="{ flags: SPELL_DBC_ATTRIBUTES_FLAGS[suffix], name: 'Attributes' + suffix }"
             [modalClass]="'modal-md'"
           />
-          <label class="control-label" [for]="'Attributes' + suffix">法术属性{{ suffix }}</label>
+          <label class="control-label" [for]="'Attributes' + suffix">Attributes{{ suffix }}</label>
           <input
             [formControlName]="'Attributes' + suffix"
             [id]="'Attributes' + suffix"
