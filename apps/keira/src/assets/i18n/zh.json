@@ -600,8 +600,8 @@
       "OTHER_PROPERTIES": "其他条件属性",
       "ELSE_GROUP": "允许构建分组条件-属于相同条件(相同SourceType, SourceGroup和SourceEntry)的所有条目在ElseGroup中使用相同的数字，进行组的定义。当它的任何组都满足时，整个条件就满足了(逻辑：或)。当组的所有条目都满足(逻辑：与)时，组就满足条件了。",
       "NEGATIVE_CONDITION": "如果设置为1，则条件将相反",
-      "ERROR_TYPE": "Id from SharedDefines.h, will be displayed for CONDITION_SOURCE_TYPE_SPELL",
-      "ERROR_TEXT_ID": "Id from SharedDefines.h, will be displayed for CONDITION_SOURCE_TYPE_SPELL",
+      "ERROR_TYPE": "来自SharedDefines.h的ID，将在CONDITION_SOURCE_TYPE_SPELL中显示",
+      "ERROR_TEXT_ID": "来自SharedDefines.h的ID，将在CONDITION_SOURCE_TYPE_SPELL中显示",
       "SCRIPT_NAME": "这个条件使用的ScriptName(如果有的话)。",
       "COMMENT": "对这一条件或参考的解释",
       "GROUP": {
