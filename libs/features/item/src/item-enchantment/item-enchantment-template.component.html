@@ -7,7 +7,7 @@
 
 <div class="container-fluid">
   @if (editorService.loading) {
-    <span [translate]="'加载中'"></span>
+    <span [translate]="'LOADING'"></span>
   }
 
   @if (editorService.form && !!editorService.loadedEntityId && !editorService.loading) {
@@ -28,16 +28,16 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <label class="control-label" for="ench">附魔</label>
+              <label class="control-label" for="ench">ench</label>
               <input [formControlName]="'ench'" id="ench" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <label class="control-label" for="chance">几率</label>
+              <label class="control-label" for="chance">chance</label>
               <input [formControlName]="'chance'" id="chance" type="number" class="form-control form-control-sm" />
             </div>
             <div class="col-12 form-error" [hidden]="editorService.isFormIdUnique()">
               <i class="fas fa-exclamation-triangle"></i>
-              <span [innerHTML]="'唯一' | translate: { ENTITY_SECOND_ID_FIELD: editorService.entitySecondIdField }"></span>
+              <span [innerHTML]="'UNIQUE' | translate: { ENTITY_SECOND_ID_FIELD: editorService.entitySecondIdField }"></span>
             </div>
           </div>
         </form>
@@ -66,8 +66,8 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="附魔" prop="ench" [minWidth]="80" />
-              <ngx-datatable-column name="几率" prop="chance" />
+              <ngx-datatable-column name="ench" prop="ench" [minWidth]="80" />
+              <ngx-datatable-column name="chance" prop="chance" />
             </ngx-datatable>
           </div>
         </div>
