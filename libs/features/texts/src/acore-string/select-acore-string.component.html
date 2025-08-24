@@ -17,19 +17,19 @@
       <div class="row">
         <ng-container [formGroup]="selectService.fields">
           <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <input [formControlName]="'entry'" type="number" class="form-control form-control-sm" id="search-id" placeholder="Entry" />
+            <input [formControlName]="'entry'" type="number" class="form-control form-control-sm" id="search-id" placeholder="条目编号" />
           </div>
           <div class="form-group col-sm-12 col-md-8 col-lg-6 col-xl-2">
             <input
               [formControlName]="'content_default'"
               class="form-control form-control-sm"
               id="search-default"
-              placeholder="Content Default"
+              placeholder="默认文本内容"
             />
           </div>
         </ng-container>
         <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="Limit" />
+          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="显示数量" />
         </div>
         <div class="mb-2 col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <button id="search-btn" class="btn btn-primary btn-sm" [disabled]="selectService.queryForm.invalid" (click)="onSearch()">
@@ -53,8 +53,8 @@
           [selectionType]="DTCFG.selectionType"
           (select)="selectService.onSelect($event)"
         >
-          <ngx-datatable-column name="entry" prop="entry" [minWidth]="80" />
-          <ngx-datatable-column name="content_default" prop="content_default" [minWidth]="400" />
+          <ngx-datatable-column name="条目编号" prop="entry" [minWidth]="80" />
+          <ngx-datatable-column name="默认文本内容" prop="content_default" [minWidth]="400" />
         </ngx-datatable>
       </div>
     }

@@ -23,19 +23,19 @@
         <div class="content-block">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ID">ID</label>
+              <label class="control-label" for="ID">编号</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'OTHER_TEXTS.PAGE_TEXT.ID' | translate"></i>
               <input [formControlName]="'ID'" id="ID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="NextPageID">NextPageID</label>
+              <label class="control-label" for="NextPageID">下一页编号</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'OTHER_TEXTS.PAGE_TEXT.NEXT_PAGE_ID' | translate"></i>
               <input [formControlName]="'NextPageID'" id="NextPageID" type="number" class="form-control form-control-sm" />
             </div>
           </div>
           <div class="row">
             <div class="form-group col-12">
-              <label class="control-label" for="Text">Text</label>
+              <label class="control-label" for="Text">文本内容</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'OTHER_TEXTS.PAGE_TEXT.TEXT' | translate"></i>
               <textarea [formControlName]="'Text'" id="Text" class="form-control form-control-sm" rows="10"></textarea>
             </div>

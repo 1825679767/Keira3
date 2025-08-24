@@ -17,13 +17,13 @@
       <div class="row">
         <ng-container [formGroup]="selectService.fields">
           <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <input [formControlName]="'ID'" type="number" class="form-control form-control-sm" id="search-id" placeholder="ID" />
+            <input [formControlName]="'ID'" type="number" class="form-control form-control-sm" id="search-id" placeholder="编号" />
           </div>
           <div class="form-group col-sm-12 col-md-8 col-lg-6 col-xl-2">
-            <input [formControlName]="'MaleText'" class="form-control form-control-sm" id="search-male-text" placeholder="MaleText" />
+            <input [formControlName]="'MaleText'" class="form-control form-control-sm" id="search-male-text" placeholder="男性文本" />
           </div>
           <div class="form-group col-sm-12 col-md-8 col-lg-6 col-xl-2">
-            <input [formControlName]="'FemaleText'" class="form-control form-control-sm" id="search-female-text" placeholder="FemaleText" />
+            <input [formControlName]="'FemaleText'" class="form-control form-control-sm" id="search-female-text" placeholder="女性文本" />
           </div>
           <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <input
@@ -31,12 +31,12 @@
               type="number"
               class="form-control form-control-sm"
               id="search-language-id"
-              placeholder="LanguageID"
+              placeholder="语言编号"
             />
           </div>
         </ng-container>
         <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="Limit" />
+          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="显示数量" />
         </div>
         <div class="mb-2 col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <button id="search-btn" class="btn btn-primary btn-sm" [disabled]="selectService.queryForm.invalid" (click)="onSearch()">
@@ -60,10 +60,10 @@
           [selectionType]="DTCFG.selectionType"
           (select)="selectService.onSelect($event)"
         >
-          <ngx-datatable-column name="ID" prop="ID" [minWidth]="80" />
-          <ngx-datatable-column name="MaleText" prop="MaleText" [minWidth]="400" />
-          <ngx-datatable-column name="FemaleText" prop="FemaleText" [minWidth]="400" />
-          <ngx-datatable-column name="LanguageID" prop="LanguageID" [minWidth]="50" />
+          <ngx-datatable-column name="编号" prop="ID" [minWidth]="80" />
+          <ngx-datatable-column name="男性文本" prop="MaleText" [minWidth]="400" />
+          <ngx-datatable-column name="女性文本" prop="FemaleText" [minWidth]="400" />
+          <ngx-datatable-column name="语言编号" prop="LanguageID" [minWidth]="50" />
         </ngx-datatable>
       </div>
     }

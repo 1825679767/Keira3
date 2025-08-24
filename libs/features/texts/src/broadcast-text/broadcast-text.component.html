@@ -23,12 +23,12 @@
         <div class="content-block">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ID">ID</label>
+              <label class="control-label" for="ID">编号</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'OTHER_TEXTS.BROADCAST_TEXT.ID' | translate"></i>
               <input [formControlName]="'ID'" id="ID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="LanguageID">LanguageID</label>
+              <label class="control-label" for="LanguageID">语言编号</label>
               <keira-language-selector-btn
                 [config]="{ name: 'LanguageID' }"
                 [control]="editorService.form.controls.LanguageID"
@@ -38,7 +38,7 @@
               <input [formControlName]="'LanguageID'" id="LanguageID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="SoundEntriesId">SoundEntriesId</label>
+              <label class="control-label" for="SoundEntriesId">音效编号</label>
               <keira-sound-entries-selector-btn
                 [config]="{ name: 'SoundEntriesId' }"
                 [control]="editorService.form.controls.SoundEntriesId"
@@ -48,11 +48,11 @@
               <input [formControlName]="'SoundEntriesId'" id="SoundEntriesId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="Flags">Flags</label>
+              <label class="control-label" for="Flags">标记</label>
               <input [formControlName]="'Flags'" id="Flags" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="EmotesID">EmotesID</label>
+              <label class="control-label" for="EmotesID">表情编号</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.EmotesID"
                 [disabled]="editorService.form.controls.EmotesID.disabled"
@@ -65,7 +65,7 @@
           </div>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="EmoteID1">EmoteID1</label>
+              <label class="control-label" for="EmoteID1">表情1编号</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.EmoteID1"
                 [disabled]="editorService.form.controls.EmoteID1.disabled"
@@ -76,12 +76,12 @@
               <input [formControlName]="'EmoteID1'" id="EmoteID1" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="EmoteDelay1">EmoteDelay1</label>
+              <label class="control-label" for="EmoteDelay1">表情1延迟</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'OTHER_TEXTS.BROADCAST_TEXT.EMOTE_DELAY_N' | translate"></i>
               <input [formControlName]="'EmoteDelay1'" id="EmoteDelay1" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="EmoteID2">EmoteID2</label>
+              <label class="control-label" for="EmoteID2">表情2编号</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.EmoteID2"
                 [disabled]="editorService.form.controls.EmoteID2.disabled"
@@ -92,12 +92,12 @@
               <input [formControlName]="'EmoteID2'" id="EmoteID2" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="EmoteDelay2">EmoteDelay2</label>
+              <label class="control-label" for="EmoteDelay2">表情2延迟</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'OTHER_TEXTS.BROADCAST_TEXT.EMOTE_DELAY_N' | translate"></i>
               <input [formControlName]="'EmoteDelay2'" id="EmoteDelay2" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="EmoteID3">EmoteID3</label>
+              <label class="control-label" for="EmoteID3">表情3编号</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.EmoteID3"
                 [disabled]="editorService.form.controls.EmoteID3.disabled"
@@ -109,21 +109,21 @@
               <input [formControlName]="'EmoteID3'" id="EmoteID3" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="EmoteDelay3">EmoteDelay3</label>
+              <label class="control-label" for="EmoteDelay3">表情3延迟</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'OTHER_TEXTS.BROADCAST_TEXT.EMOTE_DELAY_N' | translate"></i>
               <input [formControlName]="'EmoteDelay3'" id="EmoteDelay3" type="number" class="form-control form-control-sm" />
             </div>
           </div>
           <div class="row">
             <div class="form-group col-12">
-              <label class="control-label" for="MaleText">MaleText</label>
+              <label class="control-label" for="MaleText">男性文本</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'OTHER_TEXTS.BROADCAST_TEXT.MALE_TEXT' | translate"></i>
               <textarea [formControlName]="'MaleText'" id="MaleText" class="form-control form-control-sm" rows="5"></textarea>
             </div>
           </div>
           <div class="row">
             <div class="form-group col-12">
-              <label class="control-label" for="FemaleText">FemaleText</label>
+              <label class="control-label" for="FemaleText">女性文本</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'OTHER_TEXTS.BROADCAST_TEXT.FEMALE_TEXT' | translate"></i>
               <textarea [formControlName]="'FemaleText'" id="FemaleText" class="form-control form-control-sm" rows="5"></textarea>
             </div>
