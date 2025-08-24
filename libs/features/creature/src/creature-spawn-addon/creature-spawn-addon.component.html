@@ -23,22 +23,22 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="guid">guid</label>
+              <label class="control-label" for="guid">生物GUID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.SPAWN.GUID' | translate"></i>
               <input [formControlName]="'guid'" id="guid" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="path_id">path_id</label>
+              <label class="control-label" for="path_id">路径ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.SPAWN.PATH_ID' | translate"></i>
               <input [formControlName]="'path_id'" id="path_id" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="mount">mount</label>
+              <label class="control-label" for="mount">坐骑ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.SPAWN.MOUNT' | translate"></i>
               <input [formControlName]="'mount'" id="mount" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="bytes1">bytes1</label>
+              <label class="control-label" for="bytes1">字节1</label>
               <keira-generic-option-selector
                 [control]="editorService.form.controls.bytes1"
                 id="bytes1"
@@ -46,7 +46,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="bytes2">bytes2</label>
+              <label class="control-label" for="bytes2">字节2</label>
               <keira-generic-option-selector
                 [control]="editorService.form.controls.bytes2"
                 id="bytes2"
@@ -54,11 +54,11 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="emote">emote</label>
+              <label class="control-label" for="emote">表情动作</label>
               <keira-generic-option-selector [control]="editorService.form.controls.emote" id="emote" [optionList]="EMOTE" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="visibilityDistanceType">visibilityDistanceType</label>
+              <label class="control-label" for="visibilityDistanceType">可视距离类型</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.SPAWN.VISIBILITY_DISTANCE_TYPE' | translate"></i>
               <input
                 [formControlName]="'visibilityDistanceType'"
@@ -68,7 +68,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-12 col-md-8 col-lg-6 col-xl-4">
-              <label class="control-label" for="auras">auras</label>
+              <label class="control-label" for="auras">光环</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.SPAWN.AURAS' | translate"></i>
               <input [formControlName]="'auras'" id="auras" class="form-control form-control-sm" />
             </div>
@@ -111,13 +111,13 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="guid" prop="guid" [minWidth]="80" />
-              <ngx-datatable-column name="path_id" prop="path_id" />
-              <ngx-datatable-column name="mount" prop="mount" />
-              <ngx-datatable-column name="bytes1" prop="bytes1" />
-              <ngx-datatable-column name="bytes2" prop="bytes2" />
-              <ngx-datatable-column name="emote" prop="emote" />
-              <ngx-datatable-column name="auras" prop="auras" />
+              <ngx-datatable-column name="生物GUID" prop="guid" [minWidth]="80" />
+              <ngx-datatable-column name="路径ID" prop="path_id" />
+              <ngx-datatable-column name="坐骑ID" prop="mount" />
+              <ngx-datatable-column name="字节1" prop="bytes1" />
+              <ngx-datatable-column name="字节2" prop="bytes2" />
+              <ngx-datatable-column name="表情动作" prop="emote" />
+              <ngx-datatable-column name="光环" prop="auras" />
             </ngx-datatable>
           </div>
         </div>

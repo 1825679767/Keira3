@@ -23,7 +23,7 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="Index">Index</label>
+              <label class="control-label" for="Index">索引</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_SPELL.INDEX' | translate"></i>
               <select [formControlName]="'Index'" id="Index" type="number" class="form-control form-control-sm">
                 @for (index of SPELL_INDEXES; track index) {
@@ -32,7 +32,7 @@
               </select>
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <label class="control-label" for="Spell">Spell</label>
+              <label class="control-label" for="Spell">法术</label>
               <keira-spell-selector-btn
                 [control]="editorService.form.controls.Spell"
                 [disabled]="editorService.form.controls.Spell.disabled"
@@ -72,8 +72,8 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="Index" prop="Index" [minWidth]="80" [maxWidth]="150" />
-              <ngx-datatable-column name="Spell" prop="Spell" [minWidth]="80" [maxWidth]="150">
+              <ngx-datatable-column name="索引" prop="Index" [minWidth]="80" [maxWidth]="150" />
+              <ngx-datatable-column name="法术" prop="Spell" [minWidth]="80" [maxWidth]="150">
                 <ng-template let-row="row" ngx-datatable-cell-template>
                   <keira-icon size="small" [spellId]="row.Spell" /> {{ row.Spell }} -
                   {{ sqliteQueryService.getSpellNameById(row.Spell) | async }}

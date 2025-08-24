@@ -23,12 +23,12 @@
         <div class="content-block">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="creature_id">creature_id</label>
+              <label class="control-label" for="creature_id">生物ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'UNIQUE_ID' | translate: { ENTITY: 'creature' }"></i>
               <input [formControlName]="'creature_id'" id="creature_id" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="RewOnKillRepFaction1">RewOnKillRepFaction1</label>
+              <label class="control-label" for="RewOnKillRepFaction1">击杀声望阵营1</label>
               <keira-faction-selector-btn
                 [config]="{ name: 'RewOnKillRepFaction1' }"
                 [control]="editorService.form.controls.RewOnKillRepFaction1"
@@ -42,7 +42,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="RewOnKillRepFaction2">RewOnKillRepFaction2</label>
+              <label class="control-label" for="RewOnKillRepFaction2">击杀声望阵营2</label>
               <keira-faction-selector-btn
                 [config]="{ name: 'RewOnKillRepFaction2' }"
                 [control]="editorService.form.controls.RewOnKillRepFaction2"
@@ -56,7 +56,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="MaxStanding1">MaxStanding1</label>
+              <label class="control-label" for="MaxStanding1">最大声望等级1</label>
               <keira-generic-option-selector
                 [control]="editorService.form.controls.MaxStanding1"
                 id="MaxStanding1"
@@ -64,12 +64,12 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="IsTeamAward1">IsTeamAward1</label>
+              <label class="control-label" for="IsTeamAward1">是否团队奖励1</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.ONKILL_REPUTATION.IS_TEAM_AWARD1' | translate"></i>
               <keira-boolean-option-selector [control]="editorService.form.controls.IsTeamAward1" id="IsTeamAward1" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="RewOnKillRepValue1">RewOnKillRepValue1</label>
+              <label class="control-label" for="RewOnKillRepValue1">击杀声望值1</label>
               <i
                 class="fas fa-info-circle ms-1"
                 placement="auto"
@@ -78,7 +78,7 @@
               <input [formControlName]="'RewOnKillRepValue1'" id="RewOnKillRepValue1" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="MaxStanding2">MaxStanding2</label>
+              <label class="control-label" for="MaxStanding2">最大声望等级2</label>
               <keira-generic-option-selector
                 [control]="editorService.form.controls.MaxStanding2"
                 id="MaxStanding2"
@@ -86,12 +86,12 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="IsTeamAward2">IsTeamAward2</label>
+              <label class="control-label" for="IsTeamAward2">是否团队奖励2</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.ONKILL_REPUTATION.IS_TEAM_AWARD2' | translate"></i>
               <keira-boolean-option-selector [control]="editorService.form.controls.IsTeamAward2" id="IsTeamAward2" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="RewOnKillRepValue2">RewOnKillRepValue2</label>
+              <label class="control-label" for="RewOnKillRepValue2">击杀声望值2</label>
               <i
                 class="fas fa-info-circle ms-1"
                 placement="auto"
@@ -100,7 +100,7 @@
               <input [formControlName]="'RewOnKillRepValue2'" id="RewOnKillRepValue2" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="TeamDependent">TeamDependent</label>
+              <label class="control-label" for="TeamDependent">阵营相关</label>
               <i
                 class="fas fa-info-circle ms-1"
                 placement="auto"

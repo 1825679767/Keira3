@@ -23,22 +23,22 @@
         <div class="content-block">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="entry">entry</label>
+              <label class="control-label" for="entry">生物ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_ADDON.ENTRY' | translate"></i>
               <input [formControlName]="'entry'" id="entry" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="path_id">path_id</label>
+              <label class="control-label" for="path_id">路径ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_ADDON.PATH_ID' | translate"></i>
               <input [formControlName]="'path_id'" id="path_id" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="mount">mount</label>
+              <label class="control-label" for="mount">坐骑ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_ADDON.MOUNT' | translate"></i>
               <input [formControlName]="'mount'" id="mount" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="bytes1">bytes1</label>
+              <label class="control-label" for="bytes1">字节1</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.bytes1"
                 [disabled]="editorService.form.controls.bytes1.disabled"
@@ -48,7 +48,7 @@
               <input [formControlName]="'bytes1'" id="bytes1" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="bytes2">bytes2</label>
+              <label class="control-label" for="bytes2">字节2</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.bytes2"
                 [disabled]="editorService.form.controls.bytes2.disabled"
@@ -58,7 +58,7 @@
               <input [formControlName]="'bytes2'" id="bytes2" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="emote">emote</label>
+              <label class="control-label" for="emote">表情</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.emote"
                 [disabled]="editorService.form.controls.emote.disabled"
@@ -68,7 +68,7 @@
               <input [formControlName]="'emote'" id="emote" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="visibilityDistanceType">visibilityDistanceType</label>
+              <label class="control-label" for="visibilityDistanceType">可视距离类型</label>
               <i
                 class="fas fa-info-circle ms-1"
                 placement="auto"
@@ -82,7 +82,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-12 col-md-8 col-lg-6 col-xl-4">
-              <label class="control-label" for="auras">auras</label>
+              <label class="control-label" for="auras">光环</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_ADDON.AURAS' | translate"></i>
               <input [formControlName]="'auras'" id="auras" class="form-control form-control-sm" />
             </div>

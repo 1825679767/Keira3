@@ -17,20 +17,20 @@
       <div class="row">
         <ng-container [formGroup]="selectService.fields">
           <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <input formControlName="entry" type="number" class="form-control form-control-sm" id="search-id" placeholder="Entry" />
+            <input formControlName="entry" type="number" class="form-control form-control-sm" id="search-id" placeholder="ID" />
           </div>
           <div class="form-group col-sm-6 col-md-4 col-lg-2 col-xl-2">
-            <input formControlName="name" class="form-control form-control-sm" id="name" placeholder="Name" />
+            <input formControlName="name" class="form-control form-control-sm" id="name" placeholder="名称" />
           </div>
           <div class="form-group col-sm-6 col-md-4 col-lg-2 col-xl-2">
-            <input formControlName="subname" class="form-control form-control-sm" id="subname" placeholder="Subname" />
+            <input formControlName="subname" class="form-control form-control-sm" id="subname" placeholder="子名称" />
           </div>
           <div class="form-group col-sm-6 col-md-4 col-lg-2 col-xl-2">
-            <input formControlName="ScriptName" class="form-control form-control-sm" id="ScriptName" placeholder="ScriptName" />
+            <input formControlName="ScriptName" class="form-control form-control-sm" id="ScriptName" placeholder="脚本名称" />
           </div>
         </ng-container>
         <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <input formControlName="limit" class="form-control form-control-sm" id="limit" placeholder="Limit" />
+          <input formControlName="limit" class="form-control form-control-sm" id="limit" placeholder="限制数量" />
         </div>
         <div class="mb-2 col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <button id="search-btn" class="btn btn-primary btn-sm" [disabled]="selectService.queryForm.invalid" (click)="onSearch()">
@@ -56,17 +56,17 @@
           (page)="onPage($event)"
           (select)="selectService.onSelect($event)"
         >
-          <ngx-datatable-column name="entry" prop="entry" [minWidth]="100">
+          <ngx-datatable-column name="入口ID" prop="entry" [minWidth]="100">
             <ng-template let-row="row" ngx-datatable-cell-template>
               {{ row.entry }}
             </ng-template>
           </ngx-datatable-column>
-          <ngx-datatable-column name="name" prop="name" />
-          <ngx-datatable-column name="subname" prop="subname" />
-          <ngx-datatable-column name="minlevel" prop="minlevel" />
-          <ngx-datatable-column name="maxlevel" prop="maxlevel" />
-          <ngx-datatable-column name="AIName" prop="AIName" />
-          <ngx-datatable-column name="ScriptName" prop="ScriptName" />
+          <ngx-datatable-column name="名称" prop="name" />
+          <ngx-datatable-column name="子名称" prop="subname" />
+          <ngx-datatable-column name="最小等级" prop="minlevel" />
+          <ngx-datatable-column name="最大等级" prop="maxlevel" />
+          <ngx-datatable-column name="AI名称" prop="AIName" />
+          <ngx-datatable-column name="脚本名称" prop="ScriptName" />
         </ngx-datatable>
       </div>
     }

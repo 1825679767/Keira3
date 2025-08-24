@@ -23,21 +23,21 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="GroupID">GroupID</label>
+              <label class="control-label" for="GroupID">组ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEXT.GROUP_ID' | translate"></i>
               <input [formControlName]="'GroupID'" id="GroupID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="ID">ID</label>
+              <label class="control-label" for="ID">编号</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEXT.ID' | translate"></i>
               <input [formControlName]="'ID'" id="ID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="Type">Type</label>
+              <label class="control-label" for="Type">类型</label>
               <keira-generic-option-selector [control]="editorService.form.controls.Type" id="Type" [optionList]="TEXT_TYPE" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="Language">Language</label>
+              <label class="control-label" for="Language">语言</label>
               <keira-language-selector-btn
                 [config]="{ name: 'Language' }"
                 [control]="editorService.form.controls.Language"
@@ -48,22 +48,22 @@
             </div>
 
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="Probability">Probability</label>
+              <label class="control-label" for="Probability">概率</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEXT.PROBABILITY' | translate"></i>
               <input [formControlName]="'Probability'" id="Probability" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="Emote">Emote</label>
+              <label class="control-label" for="Emote">表情</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEXT.EMOTE' | translate"></i>
               <keira-generic-option-selector [control]="editorService.form.controls.Emote" id="Emote" [optionList]="EMOTE" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="Duration">Duration</label>
+              <label class="control-label" for="Duration">持续时间</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEXT.DURATION' | translate"></i>
               <input [formControlName]="'Duration'" id="Duration" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="Sound">Sound</label>
+              <label class="control-label" for="Sound">音效</label>
               <keira-sound-entries-selector-btn
                 [config]="{ name: 'SoundEntriesId' }"
                 [control]="editorService.form.controls.Sound"
@@ -73,22 +73,22 @@
               <input [formControlName]="'Sound'" id="Sound" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="BroadcastTextId">BroadcastTextId</label>
+              <label class="control-label" for="BroadcastTextId">广播文本ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEXT.BROADCAST_TEXT_ID' | translate"></i>
               <input [formControlName]="'BroadcastTextId'" id="BroadcastTextId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="Type">TextRange</label>
+              <label class="control-label" for="Type">文本范围</label>
               <keira-generic-option-selector [control]="editorService.form.controls.TextRange" id="TextRange" [optionList]="TEXT_RANGE" />
             </div>
             <div class="form-group col-12 col-md-8 col-lg-4 col-xl-4">
-              <label class="control-label" for="comment">comment</label>
+              <label class="control-label" for="comment">备注</label>
               <input [formControlName]="'comment'" id="comment" type="text" class="form-control form-control-sm" />
             </div>
           </div>
           <div class="row">
             <div class="form-group col-12">
-              <label class="control-label" for="Text">Text</label>
+              <label class="control-label" for="Text">文本内容</label>
               <input [formControlName]="'Text'" id="Text" type="text" class="form-control form-control-sm" />
             </div>
           </div>
@@ -118,18 +118,18 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="GroupID" prop="GroupID" [minWidth]="42" />
-              <ngx-datatable-column name="ID" prop="ID" [minWidth]="42" />
-              <ngx-datatable-column name="Text" prop="Text" [minWidth]="42" />
-              <ngx-datatable-column name="Type" prop="Type" [minWidth]="42" />
-              <ngx-datatable-column name="Language" prop="Language" [minWidth]="42" />
-              <ngx-datatable-column name="Probability" prop="Probability" [minWidth]="42" />
-              <ngx-datatable-column name="Emote" prop="Emote" [minWidth]="42" />
-              <ngx-datatable-column name="Duration" prop="Duration" [minWidth]="42" />
-              <ngx-datatable-column name="Sound" prop="Sound" [minWidth]="42" />
-              <ngx-datatable-column name="BroadcastTextId" prop="BroadcastTextId" [minWidth]="42" />
-              <ngx-datatable-column name="TextRange" prop="TextRange" [minWidth]="42" />
-              <ngx-datatable-column name="comment" prop="comment" [minWidth]="42" />
+              <ngx-datatable-column name="组ID" prop="GroupID" [minWidth]="42" />
+              <ngx-datatable-column name="编号" prop="ID" [minWidth]="42" />
+              <ngx-datatable-column name="文本内容" prop="Text" [minWidth]="42" />
+              <ngx-datatable-column name="类型" prop="Type" [minWidth]="42" />
+              <ngx-datatable-column name="语言" prop="Language" [minWidth]="42" />
+              <ngx-datatable-column name="概率" prop="Probability" [minWidth]="42" />
+              <ngx-datatable-column name="表情" prop="Emote" [minWidth]="42" />
+              <ngx-datatable-column name="持续时间" prop="Duration" [minWidth]="42" />
+              <ngx-datatable-column name="音效" prop="Sound" [minWidth]="42" />
+              <ngx-datatable-column name="广播文本ID" prop="BroadcastTextId" [minWidth]="42" />
+              <ngx-datatable-column name="文本范围" prop="TextRange" [minWidth]="42" />
+              <ngx-datatable-column name="备注" prop="comment" [minWidth]="42" />
             </ngx-datatable>
           </div>
         </div>

@@ -25,7 +25,7 @@
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
               <label class="control-label" for="item">
                 <keira-icon [itemId]="editorService.form.controls.item.value" />
-                item
+                物品
               </label>
               <keira-item-selector-btn
                 [control]="editorService.form.controls.item"
@@ -35,22 +35,22 @@
               <input [formControlName]="'item'" id="item" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="slot">slot</label>
+              <label class="control-label" for="slot">物品栏位置</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.NPC_VENDOR.SLOT' | translate"></i>
               <input [formControlName]="'slot'" id="slot" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="maxcount">maxcount</label>
+              <label class="control-label" for="maxcount">最大数量</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.NPC_VENDOR.MAXCOUNT' | translate"></i>
               <input [formControlName]="'maxcount'" id="maxcount" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="incrtime">incrtime</label>
+              <label class="control-label" for="incrtime">补货时间</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.NPC_VENDOR.INCRTIME' | translate"></i>
               <input [formControlName]="'incrtime'" id="incrtime" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="ExtendedCost">ExtendedCost</label>
+              <label class="control-label" for="ExtendedCost">额外消耗</label>
               <keira-item-extended-cost-selector-btn
                 [config]="{ name: 'ExtendedCost' }"
                 [control]="editorService.form.controls.ExtendedCost"
@@ -95,17 +95,17 @@
                   <keira-icon [itemId]="row.item" />
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="item" prop="item" [minWidth]="80" />
-              <ngx-datatable-column name="Name" [minWidth]="200">
+              <ngx-datatable-column name="物品ID" prop="item" [minWidth]="80" />
+              <ngx-datatable-column name="物品名称" [minWidth]="200">
                 <ng-template let-row="row" ngx-datatable-cell-template>
                   {{ editorService.queryService.getItemNameById(row.item) | async }}
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="slot" prop="slot" />
-              <ngx-datatable-column name="maxcount" prop="maxcount" />
-              <ngx-datatable-column name="incrtime" prop="incrtime" />
-              <ngx-datatable-column name="ExtendedCost" prop="ExtendedCost" />
-              <ngx-datatable-column name="ExtendedCostReadable">
+              <ngx-datatable-column name="物品栏位置" prop="slot" />
+              <ngx-datatable-column name="最大数量" prop="maxcount" />
+              <ngx-datatable-column name="补货时间" prop="incrtime" />
+              <ngx-datatable-column name="额外消耗ID" prop="ExtendedCost" />
+              <ngx-datatable-column name="额外消耗详情">
                 <ng-template let-row="row" ngx-datatable-cell-template>
                   <div [innerHTML]="editorService.getItemExtendedCost(row.ExtendedCost) | async"></div>
                 </ng-template>

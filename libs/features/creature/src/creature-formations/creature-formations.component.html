@@ -23,31 +23,31 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="leaderGUID">leaderGUID</label>
+              <label class="control-label" for="leaderGUID">领袖GUID</label>
               <input [formControlName]="'leaderGUID'" id="leaderGUID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="memberGUID">memberGUID</label>
+              <label class="control-label" for="memberGUID">成员GUID</label>
               <input [formControlName]="'memberGUID'" id="memberGUID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="dist">dist</label>
+              <label class="control-label" for="dist">距离</label>
               <input [formControlName]="'dist'" id="dist" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="angle">angle</label>
+              <label class="control-label" for="angle">角度</label>
               <input [formControlName]="'angle'" id="angle" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="groupAI">groupAI</label>
+              <label class="control-label" for="groupAI">组AI</label>
               <input [formControlName]="'groupAI'" id="groupAI" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="point_1">point_1</label>
+              <label class="control-label" for="point_1">路点1</label>
               <input [formControlName]="'point_1'" id="point_1" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="point_2">point_2</label>
+              <label class="control-label" for="point_2">路点2</label>
               <input [formControlName]="'point_2'" id="point_2" type="number" class="form-control form-control-sm" />
             </div>
             <div class="col-12 form-error" [hidden]="editorService.isFormIdUnique()">
@@ -81,13 +81,13 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="leaderGUID" prop="leaderGUID" [minWidth]="80" />
-              <ngx-datatable-column name="memberGUID" prop="memberGUID" [minWidth]="80" />
-              <ngx-datatable-column name="dist" prop="dist" [minWidth]="42" />
-              <ngx-datatable-column name="angle" prop="angle" [minWidth]="42" />
-              <ngx-datatable-column name="groupAI" prop="groupAI" [minWidth]="42" />
-              <ngx-datatable-column name="point_1" prop="point_1" [minWidth]="42" />
-              <ngx-datatable-column name="point_2" prop="point_2" [minWidth]="42" />
+              <ngx-datatable-column name="领袖GUID" prop="leaderGUID" [minWidth]="80" />
+              <ngx-datatable-column name="成员GUID" prop="memberGUID" [minWidth]="80" />
+              <ngx-datatable-column name="距离" prop="dist" [minWidth]="42" />
+              <ngx-datatable-column name="角度" prop="angle" [minWidth]="42" />
+              <ngx-datatable-column name="组AI" prop="groupAI" [minWidth]="42" />
+              <ngx-datatable-column name="路点1" prop="point_1" [minWidth]="42" />
+              <ngx-datatable-column name="路点2" prop="point_2" [minWidth]="42" />
             </ngx-datatable>
           </div>
         </div>

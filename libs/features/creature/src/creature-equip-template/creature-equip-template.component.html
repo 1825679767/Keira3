@@ -23,14 +23,14 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="CreatureID">CreatureID</label>
+              <label class="control-label" for="CreatureID">生物ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'UNIQUE_ID' | translate: { ENTITY: 'creature' }"></i>
               <input [formControlName]="'CreatureID'" id="CreatureID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <label class="control-label" for="ItemID1">
                 <keira-icon [itemId]="editorService.form.controls.ItemID1.value" />
-                ItemID1
+                装备物品1
               </label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.ITEMID1' | translate"></i>
               <keira-item-selector-btn
@@ -43,7 +43,7 @@
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <label class="control-label" for="ItemID2">
                 <keira-icon [itemId]="editorService.form.controls.ItemID2.value" />
-                ItemID2
+                装备物品2
               </label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.ITEMID2' | translate"></i>
               <keira-item-selector-btn
@@ -56,7 +56,7 @@
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <label class="control-label" for="ItemID3">
                 <keira-icon [itemId]="editorService.form.controls.ItemID3.value" />
-                ItemID3
+                装备物品3
               </label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.ITEMID3' | translate"></i>
               <keira-item-selector-btn

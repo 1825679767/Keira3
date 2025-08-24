@@ -23,59 +23,59 @@
         <div class="content-block">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="Ground">Ground</label>
+              <label class="control-label" for="Ground">地面移动</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_MOVEMENT.GROUND' | translate"></i>
               <select [formControlName]="'Ground'" id="Ground" class="form-control form-control-sm">
-                <option [ngValue]="0">0 - None</option>
-                <option [ngValue]="1">1 - Run</option>
-                <option [ngValue]="2">2 - Hover</option>
+                <option [ngValue]="0">0 - 无</option>
+                <option [ngValue]="1">1 - 奔跑</option>
+                <option [ngValue]="2">2 - 悬浮</option>
               </select>
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="Swim">Swim</label>
+              <label class="control-label" for="Swim">游泳</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_MOVEMENT.SWIM' | translate"></i>
               <select [formControlName]="'Swim'" id="Swim" class="form-control form-control-sm">
-                <option [ngValue]="0">0 - None</option>
-                <option [ngValue]="1">1 - Swim</option>
+                <option [ngValue]="0">0 - 无</option>
+                <option [ngValue]="1">1 - 游泳</option>
               </select>
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="Flight">Flight</label>
+              <label class="control-label" for="Flight">飞行</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_MOVEMENT.FLIGHT' | translate"></i>
               <select [formControlName]="'Flight'" id="Flight" class="form-control form-control-sm">
-                <option [ngValue]="0">0 - None</option>
-                <option [ngValue]="1">1 - Disable Gravity</option>
-                <option [ngValue]="2">2 - Can Fly</option>
+                <option [ngValue]="0">0 - 无</option>
+                <option [ngValue]="1">1 - 禁用重力</option>
+                <option [ngValue]="2">2 - 可以飞行</option>
               </select>
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="Rooted">Rooted</label>
+              <label class="control-label" for="Rooted">定身</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_MOVEMENT.ROOTED' | translate"></i>
               <select [formControlName]="'Rooted'" id="Rooted" class="form-control form-control-sm">
-                <option [ngValue]="0">0 - None</option>
-                <option [ngValue]="1">1 - Rooted</option>
+                <option [ngValue]="0">0 - 无</option>
+                <option [ngValue]="1">1 - 定身</option>
               </select>
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="Chase">Chase</label>
+              <label class="control-label" for="Chase">追击</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_MOVEMENT.CHASE' | translate"></i>
               <select [formControlName]="'Chase'" id="Chase" class="form-control form-control-sm">
-                <option [ngValue]="0">0 - None</option>
-                <option [ngValue]="1">1 - Can Walk</option>
-                <option [ngValue]="2">2 - Always Walk</option>
+                <option [ngValue]="0">0 - 无</option>
+                <option [ngValue]="1">1 - 可以走路</option>
+                <option [ngValue]="2">2 - 始终走路</option>
               </select>
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="Random">Random</label>
+              <label class="control-label" for="Random">随机移动</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE_MOVEMENT.RANDOM' | translate"></i>
               <select [formControlName]="'Random'" id="Random" class="form-control form-control-sm">
-                <option [ngValue]="0">0 - Walk</option>
-                <option [ngValue]="1">1 - Can Run</option>
-                <option [ngValue]="2">2 - Always Run</option>
+                <option [ngValue]="0">0 - 走路</option>
+                <option [ngValue]="1">1 - 可以奔跑</option>
+                <option [ngValue]="2">2 - 始终奔跑</option>
               </select>
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="InteractionPauseTimer">InteractionPauseTimer</label>
+              <label class="control-label" for="InteractionPauseTimer">交互暂停时间</label>
               <i
                 class="fas fa-info-circle ms-1"
                 placement="auto"

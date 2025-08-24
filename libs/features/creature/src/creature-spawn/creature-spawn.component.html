@@ -23,11 +23,11 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="guid">guid</label>
+              <label class="control-label" for="guid">全局唯一ID</label>
               <input [formControlName]="'guid'" id="guid" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="map">map</label>
+              <label class="control-label" for="map">地图ID</label>
               <keira-map-selector-btn
                 [config]="{ name: 'map' }"
                 [control]="editorService.form.controls.map"
@@ -36,11 +36,11 @@
               <input [formControlName]="'map'" id="map" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="zoneId">zoneId</label>
+              <label class="control-label" for="zoneId">区域ID</label>
               <input [formControlName]="'zoneId'" id="zoneId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="areaId">areaId</label>
+              <label class="control-label" for="areaId">子区域ID</label>
               <keira-area-selector-btn
                 [config]="{ name: 'areaId' }"
                 [control]="editorService.form.controls.areaId"
@@ -49,7 +49,7 @@
               <input [formControlName]="'areaId'" id="areaId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="spawnMask">spawnMask</label>
+              <label class="control-label" for="spawnMask">刷新掩码</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.spawnMask"
                 [disabled]="editorService.form.controls.spawnMask.disabled"
@@ -59,7 +59,7 @@
               <input [formControlName]="'spawnMask'" id="spawnMask" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="phaseMask">phaseMask</label>
+              <label class="control-label" for="phaseMask">相位掩码</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.phaseMask"
                 [disabled]="editorService.form.controls.phaseMask.disabled"
@@ -69,50 +69,50 @@
               <input [formControlName]="'phaseMask'" id="phaseMask" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="equipment_id">equipment_id</label>
+              <label class="control-label" for="equipment_id">装备ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.SPAWN.EQUIPMENT_ID_TOOLTIP' | translate"></i>
               <input [formControlName]="'equipment_id'" id="equipment_id" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="position_x">position_x</label>
+              <label class="control-label" for="position_x">X坐标</label>
               <input [formControlName]="'position_x'" id="position_x" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="position_y">position_y</label>
+              <label class="control-label" for="position_y">Y坐标</label>
               <input [formControlName]="'position_y'" id="position_y" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="position_z">position_z</label>
+              <label class="control-label" for="position_z">Z坐标</label>
               <input [formControlName]="'position_z'" id="position_z" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="orientation">orientation</label>
+              <label class="control-label" for="orientation">朝向</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.SPAWN.ORIENTATION' | translate"></i>
               <input [formControlName]="'orientation'" id="orientation" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="spawntimesecs">spawntimesecs</label>
+              <label class="control-label" for="spawntimesecs">重生时间(秒)</label>
               <input [formControlName]="'spawntimesecs'" id="spawntimesecs" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="wander_distance">wander_distance</label>
+              <label class="control-label" for="wander_distance">游荡距离</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.SPAWN.SPAWN_DIST_TOOLTIP' | translate"></i>
               <input [formControlName]="'wander_distance'" id="wander_distance" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="currentwaypoint">currentwaypoint</label>
+              <label class="control-label" for="currentwaypoint">当前路径点</label>
               <input [formControlName]="'currentwaypoint'" id="currentwaypoint" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="curhealth">curhealth</label>
+              <label class="control-label" for="curhealth">当前生命值</label>
               <input [formControlName]="'curhealth'" id="curhealth" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="curmana">curmana</label>
+              <label class="control-label" for="curmana">当前法力值</label>
               <input [formControlName]="'curmana'" id="curmana" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="MovementType">MovementType</label>
+              <label class="control-label" for="MovementType">移动类型</label>
               <keira-generic-option-selector
                 [control]="editorService.form.controls.MovementType"
                 id="MovementType"
@@ -120,7 +120,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="npcflag">npcflag</label>
+              <label class="control-label" for="npcflag">NPC标志</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.npcflag"
                 [disabled]="editorService.form.controls.npcflag.disabled"
@@ -129,7 +129,7 @@
               <input [formControlName]="'npcflag'" id="npcflag" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="unit_flags">unit_flags</label>
+              <label class="control-label" for="unit_flags">单位标志</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.unit_flags"
                 [disabled]="editorService.form.controls.unit_flags.disabled"
@@ -138,7 +138,7 @@
               <input [formControlName]="'unit_flags'" id="unit_flags" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="dynamicflags">dynamicflags</label>
+              <label class="control-label" for="dynamicflags">动态标志</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.dynamicflags"
                 [disabled]="editorService.form.controls.dynamicflags.disabled"
@@ -147,12 +147,12 @@
               <input [formControlName]="'dynamicflags'" id="dynamicflags" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="ScriptName">ScriptName</label>
+              <label class="control-label" for="ScriptName">脚本名称</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.SPAWN.SCRIPT_NAME' | translate"></i>
               <input [formControlName]="'ScriptName'" id="ScriptName" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="Comment">Comment</label>
+              <label class="control-label" for="Comment">注释</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.SPAWN.COMMENT' | translate"></i>
               <input [formControlName]="'Comment'" id="Comment" class="form-control form-control-sm" />
             </div>
@@ -187,26 +187,26 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="guid" prop="guid" [minWidth]="80" />
-              <ngx-datatable-column name="M" prop="map" [minWidth]="42" />
-              <ngx-datatable-column name="Z" prop="zoneId" [minWidth]="42" />
-              <ngx-datatable-column name="A" prop="areaId" [minWidth]="42" />
-              <ngx-datatable-column name="SM" prop="spawnMask" [minWidth]="42" />
-              <ngx-datatable-column name="PM" prop="phaseMask" [minWidth]="42" />
-              <ngx-datatable-column name="Equip" prop="equipment_id" [minWidth]="42" />
-              <ngx-datatable-column name="position_x" prop="position_x" [minWidth]="90" />
-              <ngx-datatable-column name="position_y" prop="position_y" [minWidth]="90" />
-              <ngx-datatable-column name="position_z" prop="position_z" [minWidth]="90" />
-              <ngx-datatable-column name="orient." prop="orientation" [minWidth]="90" />
-              <ngx-datatable-column name="Time" prop="spawntimesecs" [minWidth]="50" />
-              <ngx-datatable-column name="Dist" prop="wander_distance" [minWidth]="42" />
-              <ngx-datatable-column name="CW" prop="currentwaypoint" [minWidth]="42" />
-              <ngx-datatable-column name="Movement" prop="MovementType" [minWidth]="42" />
-              <ngx-datatable-column name="npcFlags" prop="npcflag" [minWidth]="42" />
-              <ngx-datatable-column name="unitFlags" prop="unit_flags" [minWidth]="42" />
-              <ngx-datatable-column name="dynFlags" prop="dynamicflags" [minWidth]="42" />
-              <ngx-datatable-column name="ScriptName" prop="ScriptName" [minWidth]="80" />
-              <ngx-datatable-column name="Comment" prop="Comment" [minWidth]="42" />
+              <ngx-datatable-column name="全局唯一ID" prop="guid" [minWidth]="80" />
+              <ngx-datatable-column name="地图" prop="map" [minWidth]="42" />
+              <ngx-datatable-column name="区域" prop="zoneId" [minWidth]="42" />
+              <ngx-datatable-column name="子区域" prop="areaId" [minWidth]="42" />
+              <ngx-datatable-column name="刷新掩码" prop="spawnMask" [minWidth]="42" />
+              <ngx-datatable-column name="相位掩码" prop="phaseMask" [minWidth]="42" />
+              <ngx-datatable-column name="装备" prop="equipment_id" [minWidth]="42" />
+              <ngx-datatable-column name="X坐标" prop="position_x" [minWidth]="90" />
+              <ngx-datatable-column name="Y坐标" prop="position_y" [minWidth]="90" />
+              <ngx-datatable-column name="Z坐标" prop="position_z" [minWidth]="90" />
+              <ngx-datatable-column name="朝向" prop="orientation" [minWidth]="90" />
+              <ngx-datatable-column name="重生时间" prop="spawntimesecs" [minWidth]="50" />
+              <ngx-datatable-column name="游荡距离" prop="wander_distance" [minWidth]="42" />
+              <ngx-datatable-column name="路径点" prop="currentwaypoint" [minWidth]="42" />
+              <ngx-datatable-column name="移动类型" prop="MovementType" [minWidth]="42" />
+              <ngx-datatable-column name="NPC标志" prop="npcflag" [minWidth]="42" />
+              <ngx-datatable-column name="单位标志" prop="unit_flags" [minWidth]="42" />
+              <ngx-datatable-column name="动态标志" prop="dynamicflags" [minWidth]="42" />
+              <ngx-datatable-column name="脚本名称" prop="ScriptName" [minWidth]="80" />
+              <ngx-datatable-column name="注释" prop="Comment" [minWidth]="42" />
             </ngx-datatable>
           </div>
         </div>

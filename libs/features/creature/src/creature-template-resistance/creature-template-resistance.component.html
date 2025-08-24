@@ -23,7 +23,7 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="School">School</label>
+              <label class="control-label" for="School">法术学派</label>
               <keira-generic-option-selector
                 [control]="editorService.form.controls.School"
                 id="School"
@@ -31,7 +31,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <label class="control-label" for="Resistance">Resistance</label>
+              <label class="control-label" for="Resistance">抗性</label>
               <input [formControlName]="'Resistance'" id="Resistance" type="number" class="form-control form-control-sm" />
             </div>
             <div class="col-12 form-error" [hidden]="editorService.isFormIdUnique()">
@@ -65,8 +65,8 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="School" prop="School" [minWidth]="80" [maxWidth]="150" />
-              <ngx-datatable-column name="Resistance" prop="Resistance" [minWidth]="80" [maxWidth]="150" />
+              <ngx-datatable-column name="法术学派" prop="School" [minWidth]="80" [maxWidth]="150" />
+              <ngx-datatable-column name="抗性" prop="Resistance" [minWidth]="80" [maxWidth]="150" />
             </ngx-datatable>
           </div>
         </div>

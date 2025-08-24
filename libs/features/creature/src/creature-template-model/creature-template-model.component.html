@@ -23,27 +23,27 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="Idx">Idx</label>
+              <label class="control-label" for="Idx">索引</label>
               <input [formControlName]="'Idx'" id="Idx" type="number" class="form-control form-control-sm" />
             </div>
 
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="CreatureDisplayID">CreatureDisplayID</label>
+              <label class="control-label" for="CreatureDisplayID">生物显示ID</label>
               <input [formControlName]="'CreatureDisplayID'" id="CreatureDisplayID" type="number" class="form-control form-control-sm" />
             </div>
 
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="DisplayScale">DisplayScale</label>
+              <label class="control-label" for="DisplayScale">显示比例</label>
               <input [formControlName]="'DisplayScale'" id="DisplayScale" type="number" class="form-control form-control-sm" />
             </div>
 
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="Probability">Probability</label>
+              <label class="control-label" for="Probability">概率</label>
               <input [formControlName]="'Probability'" id="Probability" type="number" class="form-control form-control-sm" />
             </div>
 
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="VerifiedBuild">VerifiedBuild</label>
+              <label class="control-label" for="VerifiedBuild">验证版本</label>
               <input [formControlName]="'VerifiedBuild'" id="VerifiedBuild" type="number" class="form-control form-control-sm" />
             </div>
 
@@ -78,11 +78,11 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="Idx" prop="Idx" [minWidth]="80" />
-              <ngx-datatable-column name="CreatureDisplayID" prop="CreatureDisplayID" />
-              <ngx-datatable-column name="DisplayScale" prop="DisplayScale" />
-              <ngx-datatable-column name="Probability" prop="Probability" />
-              <ngx-datatable-column name="VerifiedBuild" prop="VerifiedBuild" />
+              <ngx-datatable-column name="索引" prop="Idx" [minWidth]="80" />
+              <ngx-datatable-column name="生物显示ID" prop="CreatureDisplayID" />
+              <ngx-datatable-column name="显示比例" prop="DisplayScale" />
+              <ngx-datatable-column name="概率" prop="Probability" />
+              <ngx-datatable-column name="验证版本" prop="VerifiedBuild" />
             </ngx-datatable>
           </div>
         </div>

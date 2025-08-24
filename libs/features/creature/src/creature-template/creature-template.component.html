@@ -24,42 +24,42 @@
           <span class="category-title" [translate]="'CREATURE.TEMPLATE.BASE'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="entry">entry</label>
+              <label class="control-label" for="entry">编号</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'UNIQUE_ID' | translate: { ENTITY: 'creature' }"></i>
               <input [formControlName]="'entry'" id="entry" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="name">name</label>
+              <label class="control-label" for="name">名称</label>
               <input [formControlName]="'name'" id="name" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="subname">subname</label>
+              <label class="control-label" for="subname">子名称</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.SUBNAME' | translate"></i>
               <input [formControlName]="'subname'" id="subname" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
               <label class="control-label" for="IconName">
                 <keira-icon-selector [src]="'assets/img/creature-icons/' + editorService.form.controls.IconName.value + '.png'" />
-                IconName</label
+                图标名称</label
               >
               <keira-generic-option-selector [control]="editorService.form.controls.IconName" id="IconName" [optionList]="CREATURE_ICON" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="minlevel">minlevel</label>
+              <label class="control-label" for="minlevel">最低等级</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.MIN_MAX_LEVEL' | translate"></i>
               <input [formControlName]="'minlevel'" id="minlevel" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="maxlevel">maxlevel</label>
+              <label class="control-label" for="maxlevel">最高等级</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.MIN_MAX_LEVEL' | translate"></i>
               <input [formControlName]="'maxlevel'" id="maxlevel" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="exp">expansion</label>
+              <label class="control-label" for="exp">资料片</label>
               <keira-generic-option-selector [control]="editorService.form.controls.exp" id="exp" [optionList]="EXPANSION" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="faction">faction</label>
+              <label class="control-label" for="faction">阵营</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.FACTION' | translate"></i>
               <keira-faction-selector-btn
                 [config]="{ name: 'faction' }"
@@ -69,7 +69,7 @@
               <input [formControlName]="'faction'" id="faction" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="npcflag">npcflag</label>
+              <label class="control-label" for="npcflag">NPC标志</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.npcflag"
                 [disabled]="editorService.form.controls.npcflag.disabled"
@@ -78,20 +78,20 @@
               <input [formControlName]="'npcflag'" id="npcflag" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="rank">rank</label>
+              <label class="control-label" for="rank">等级</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.RANK' | translate"></i>
               <keira-generic-option-selector [control]="editorService.form.controls.rank" id="rank" [optionList]="RANK" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="family">family</label>
+              <label class="control-label" for="family">家族</label>
               <keira-generic-option-selector [control]="editorService.form.controls.family" id="family" [optionList]="CREATURE_FAMILY" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="type">type</label>
+              <label class="control-label" for="type">类型</label>
               <keira-generic-option-selector [control]="editorService.form.controls.type" id="type" [optionList]="CREATURE_TYPE" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="type_flags">type_flags</label>
+              <label class="control-label" for="type_flags">类型标志</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.type_flags"
                 [disabled]="editorService.form.controls.type_flags.disabled"
@@ -100,11 +100,11 @@
               <input [formControlName]="'type_flags'" id="type_flags" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="unit_class">unit_class</label>
+              <label class="control-label" for="unit_class">单位职业</label>
               <keira-generic-option-selector [control]="editorService.form.controls.unit_class" id="unit_class" [optionList]="UNIT_CLASS" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="unit_flags">unit_flags</label>
+              <label class="control-label" for="unit_flags">单位标志</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.unit_flags"
                 [disabled]="editorService.form.controls.unit_flags.disabled"
@@ -113,7 +113,7 @@
               <input [formControlName]="'unit_flags'" id="unit_flags" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="unit_flags2">unit_flags2</label>
+              <label class="control-label" for="unit_flags2">单位标志2</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.unit_flags2"
                 [disabled]="editorService.form.controls.unit_flags2.disabled"
@@ -122,7 +122,7 @@
               <input [formControlName]="'unit_flags2'" id="unit_flags2" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="dynamicflags">dynamicflags</label>
+              <label class="control-label" for="dynamicflags">动态标志</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.dynamicflags"
                 [disabled]="editorService.form.controls.dynamicflags.disabled"
@@ -131,12 +131,12 @@
               <input [formControlName]="'dynamicflags'" id="dynamicflags" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="RegenHealth">RegenHealth</label>
+              <label class="control-label" for="RegenHealth">生命恢复</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.REGEN_HEALTH' | translate"></i>
               <keira-boolean-option-selector [control]="editorService.form.controls.RegenHealth" id="RegenHealth" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="mechanic_immune_mask">mechanic_I_M</label>
+              <label class="control-label" for="mechanic_immune_mask">机制免疫掩码</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.mechanic_immune_mask"
                 [disabled]="editorService.form.controls.mechanic_immune_mask.disabled"
@@ -150,7 +150,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="spell_school_immune_mask">spell_school_I_M</label>
+              <label class="control-label" for="spell_school_immune_mask">法术学派免疫掩码</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.spell_school_immune_mask"
                 [disabled]="editorService.form.controls.spell_school_immune_mask.disabled"
@@ -164,7 +164,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="flags_extra">flags_extra</label>
+              <label class="control-label" for="flags_extra">额外标志</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.flags_extra"
                 [disabled]="editorService.form.controls.flags_extra.disabled"
@@ -173,17 +173,17 @@
               <input [formControlName]="'flags_extra'" id="flags_extra" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="VehicleId">VehicleId</label>
+              <label class="control-label" for="VehicleId">载具ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.VEHICLE_ID_TOOLTIP' | translate"></i>
               <input [formControlName]="'VehicleId'" id="VehicleId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="RacialLeader">RacialLeader</label>
+              <label class="control-label" for="RacialLeader">种族领袖</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.RACIAL_LEADER' | translate"></i>
               <keira-boolean-option-selector [control]="editorService.form.controls.RacialLeader" id="RacialLeader" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="PetSpellDataId">PetSpellDataId</label>
+              <label class="control-label" for="PetSpellDataId">宠物法术数据ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.PET_SPELL_DATA_ID' | translate"></i>
               <input [formControlName]="'PetSpellDataId'" id="PetSpellDataId" type="number" class="form-control form-control-sm" />
             </div>
@@ -196,7 +196,7 @@
               <div class="row">
                 @for (i of [1, 2]; track i) {
                   <div class="form-group col-12 col-sm-6 col-md-6 col-lg-3 col-xl-6">
-                    <label class="control-label" for="KillCredit{{ i }}">KillCredit{{ i }}</label>
+                    <label class="control-label" for="KillCredit{{ i }}">击杀奖励{{ i }}</label>
                     <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.KILL_CREDITS_DESC' | translate"></i>
                     <input [formControlName]="'KillCredit' + i" id="KillCredit{{ i }}" type="number" class="form-control form-control-sm" />
                   </div>
@@ -209,8 +209,8 @@
                 <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.MODEL_ID_TOOLTIP' | translate"></i>
               </span>
               <span
-                >Models are now available in the
-                <a href="" [routerLink]="['/creature', 'creature-template-model']">Creature Template Model</a> editor.</span
+                >模型现在可以在
+                <a href="" [routerLink]="['/creature', 'creature-template-model']">生物模板模型</a> 编辑器中编辑。</span
               >
             </div>
           </div>
@@ -221,12 +221,12 @@
               <span class="category-title" [translate]="'CREATURE.TEMPLATE.MONEY_LOOT'"></span>
               <div class="row">
                 <div class="form-group col-12 col-sm-6 col-md-6 col-lg-3 col-xl-6">
-                  <label class="control-label" for="mingold">mingold</label>
+                  <label class="control-label" for="mingold">最小金币</label>
                   <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.MINGOLD' | translate"></i>
                   <input [formControlName]="'mingold'" id="mingold" type="number" class="form-control form-control-sm" />
                 </div>
                 <div class="form-group col-12 col-sm-6 col-md-6 col-lg-3 col-xl-6">
-                  <label class="control-label" for="maxgold">maxgold</label>
+                  <label class="control-label" for="maxgold">最大金币</label>
                   <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.MAXGOLD' | translate"></i>
                   <input [formControlName]="'maxgold'" id="maxgold" type="number" class="form-control form-control-sm" />
                 </div>
@@ -236,7 +236,7 @@
               <span class="category-title" [translate]="'CREATURE.TEMPLATE.TRAINER'"></span>
               <div class="row">
                 <div class="form-group col-12 col-sm-6 col-md-6 col-lg-3">
-                  <label class="control-label" for="trainer_type">trainer_type</label>
+                  <label class="control-label" for="trainer_type">训练师类型</label>
                   <keira-generic-option-selector
                     [control]="editorService.form.controls.trainer_type"
                     id="trainer_type"
@@ -244,7 +244,7 @@
                   />
                 </div>
                 <div class="form-group col-12 col-sm-6 col-md-6 col-lg-3">
-                  <label class="control-label" for="trainer_spell">trainer_spell</label>
+                  <label class="control-label" for="trainer_spell">训练师法术</label>
                   <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.TRAINER_SPELL_TOOLTIP' | translate"></i>
                   <keira-spell-selector-btn
                     [control]="editorService.form.controls.trainer_spell"
@@ -257,7 +257,7 @@
                 <div class="form-group col-12 col-sm-6 col-md-6 col-lg-3">
                   <label class="control-label" for="trainer_class">
                     <keira-icon-selector [src]="'assets/img/class/' + editorService.form.controls.trainer_class.value + '.gif'" />
-                    trainer_class</label
+                    训练师职业</label
                   >
                   <keira-generic-option-selector
                     [control]="editorService.form.controls.trainer_class"
@@ -272,7 +272,7 @@
                         'assets/img/race/' + editorService.form.controls.trainer_race.value + '-' + (RACE_ICON_GENDER ? 1 : 0) + '.gif'
                       "
                     />
-                    trainer_race</label
+                    训练师种族</label
                   >
                   <select
                     [formControlName]="'trainer_race'"
@@ -295,17 +295,17 @@
               <span class="category-title" [translate]="'CREATURE.TEMPLATE.LOOTS'"></span>
               <div class="row">
                 <div class="form-group col-12 col-sm-6 col-md-4">
-                  <label class="control-label" for="lootid">lootid</label>
+                  <label class="control-label" for="lootid">掉落ID</label>
                   <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.LOOTID' | translate"></i>
                   <input [formControlName]="'lootid'" id="lootid" type="number" class="form-control form-control-sm" />
                 </div>
                 <div class="form-group col-12 col-sm-6 col-md-4">
-                  <label class="control-label" for="pickpocketloot">pickpocketloot</label>
+                  <label class="control-label" for="pickpocketloot">偷窃掉落</label>
                   <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.PICKPOCKETLOOT' | translate"></i>
                   <input [formControlName]="'pickpocketloot'" id="pickpocketloot" type="number" class="form-control form-control-sm" />
                 </div>
                 <div class="form-group col-12 col-sm-6 col-md-4">
-                  <label class="control-label" for="skinloot">skinloot</label>
+                  <label class="control-label" for="skinloot">剥皮掉落</label>
                   <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.SKINLOOT' | translate"></i>
                   <input [formControlName]="'skinloot'" id="skinloot" type="number" class="form-control form-control-sm" />
                 </div>
@@ -315,7 +315,7 @@
               <span class="category-title" [translate]="'CREATURE.TEMPLATE.DIFFICULTY_ENTRIES'"></span>
               <div class="row">
                 <div class="form-group col-12 col-sm-6 col-md-4">
-                  <label class="control-label" for="difficulty_entry_1">difficulty_entry_1</label>
+                  <label class="control-label" for="difficulty_entry_1">难度条目1</label>
                   <keira-creature-selector-btn
                     [control]="editorService.form.controls.difficulty_entry_1"
                     [disabled]="editorService.form.controls.difficulty_entry_1.disabled"
@@ -330,7 +330,7 @@
                   />
                 </div>
                 <div class="form-group col-12 col-sm-6 col-md-4">
-                  <label class="control-label" for="difficulty_entry_2">difficulty_entry_2</label>
+                  <label class="control-label" for="difficulty_entry_2">难度条目2</label>
                   <keira-creature-selector-btn
                     [control]="editorService.form.controls.difficulty_entry_2"
                     [disabled]="editorService.form.controls.difficulty_entry_2.disabled"
@@ -345,7 +345,7 @@
                   />
                 </div>
                 <div class="form-group col-12 col-sm-6 col-md-4">
-                  <label class="control-label" for="difficulty_entry_3">difficulty_entry_3</label>
+                  <label class="control-label" for="difficulty_entry_3">难度条目3</label>
                   <keira-creature-selector-btn
                     [control]="editorService.form.controls.difficulty_entry_3"
                     [disabled]="editorService.form.controls.difficulty_entry_3.disabled"
@@ -367,26 +367,26 @@
           <span class="category-title" [translate]="'CREATURE.TEMPLATE.DAMAGE'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="BaseVariance">BaseVariance</label>
+              <label class="control-label" for="BaseVariance">基础变化</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'TODO' | translate"></i>
               <input [formControlName]="'BaseVariance'" id="BaseVariance" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="RangeVariance">RangeVariance</label>
+              <label class="control-label" for="RangeVariance">范围变化</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'TODO' | translate"></i>
               <input [formControlName]="'RangeVariance'" id="RangeVariance" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="dmgschool">dmgschool</label>
+              <label class="control-label" for="dmgschool">伤害学派</label>
               <keira-generic-option-selector [control]="editorService.form.controls.dmgschool" id="dmgschool" [optionList]="DAMAGE_TYPE" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="BaseAttackTime">BaseAttackTime</label>
+              <label class="control-label" for="BaseAttackTime">基础攻击时间</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.BASE_ATTACK_TIME' | translate"></i>
               <input [formControlName]="'BaseAttackTime'" id="BaseAttackTime" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="RangeAttackTime">RangeAttackTime</label>
+              <label class="control-label" for="RangeAttackTime">远程攻击时间</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.RANGE_ATTACK_TIME' | translate"></i>
               <input [formControlName]="'RangeAttackTime'" id="RangeAttackTime" type="number" class="form-control form-control-sm" />
             </div>
@@ -396,7 +396,7 @@
           <span class="category-title" [translate]="'CREATURE.TEMPLATE.BEHAVIOUR'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="AIName">AIName</label>
+              <label class="control-label" for="AIName">AI名称</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.AIName"
                 [disabled]="editorService.form.controls.AIName.disabled"
@@ -406,17 +406,17 @@
               <input [formControlName]="'AIName'" id="AIName" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ScriptName">ScriptName</label>
+              <label class="control-label" for="ScriptName">脚本名称</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.SCRIPT_NAME' | translate"></i>
               <input [formControlName]="'ScriptName'" id="ScriptName" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="gossip_menu_id">gossip_menu_id</label>
+              <label class="control-label" for="gossip_menu_id">闲谈菜单ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.GOSSIP_MENU_ID' | translate"></i>
               <input [formControlName]="'gossip_menu_id'" id="gossip_menu_id" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="MovementType">MovementType</label>
+              <label class="control-label" for="MovementType">移动类型</label>
               <keira-generic-option-selector
                 [control]="editorService.form.controls.MovementType"
                 id="MovementType"
@@ -424,12 +424,12 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="movementId">movementId</label>
+              <label class="control-label" for="movementId">移动ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.MOVEMENT_ID' | translate"></i>
               <input [formControlName]="'movementId'" id="movementId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="HoverHeight">HoverHeight</label>
+              <label class="control-label" for="HoverHeight">悬浮高度</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.HOVER_HEIGHT' | translate"></i>
               <input [formControlName]="'HoverHeight'" id="HoverHeight" type="number" class="form-control form-control-sm" />
             </div>
@@ -439,54 +439,54 @@
           <span class="category-title" [translate]="'CREATURE.TEMPLATE.MODIFIERS'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="scale">scale</label>
+              <label class="control-label" for="scale">缩放</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.SCALE' | translate"></i>
               <input [formControlName]="'scale'" id="scale" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="DamageModifier">DamageModifier</label>
+              <label class="control-label" for="DamageModifier">伤害修正</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.DAMAGE_MODIFIER' | translate"></i>
               <input [formControlName]="'DamageModifier'" id="DamageModifier" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="HealthModifier">HealthModifier</label>
+              <label class="control-label" for="HealthModifier">生命修正</label>
               <input [formControlName]="'HealthModifier'" id="HealthModifier" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ManaModifier">ManaModifier</label>
+              <label class="control-label" for="ManaModifier">法力修正</label>
               <input [formControlName]="'ManaModifier'" id="ManaModifier" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ArmorModifier">ArmorModifier</label>
+              <label class="control-label" for="ArmorModifier">护甲修正</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.ARMOR_MODIFIER_TOOLTIP' | translate"></i>
               <input [formControlName]="'ArmorModifier'" id="ArmorModifier" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="ExperienceModifier">ExperienceModifier</label>
+              <label class="control-label" for="ExperienceModifier">经验修正</label>
               <input formControlName="ExperienceModifier" id="ExperienceModifier" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="speed_walk">speed_walk</label>
+              <label class="control-label" for="speed_walk">步行速度</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.SPEED_RUN' | translate"></i>
               <input [formControlName]="'speed_walk'" id="speed_walk" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="speed_run">speed_run</label>
+              <label class="control-label" for="speed_run">奔跑速度</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.SPEED_WALK' | translate"></i>
               <input [formControlName]="'speed_run'" id="speed_run" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="speed_run">speed_swim</label>
+              <label class="control-label" for="speed_run">游泳速度</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.SPEED_SWIM' | translate"></i>
               <input [formControlName]="'speed_swim'" id="speed_swim" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="speed_run">speed_flight</label>
+              <label class="control-label" for="speed_run">飞行速度</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.SPEED_FLIGHT' | translate"></i>
               <input [formControlName]="'speed_flight'" id="speed_flight" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="detection_range">detection_range</label>
+              <label class="control-label" for="detection_range">侦测范围</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'CREATURE.TEMPLATE.DETECTION_RANGE' | translate"></i>
               <input [formControlName]="'detection_range'" id="detection_range" type="number" class="form-control form-control-sm" />
             </div>
@@ -501,7 +501,7 @@
             *ngFor="let i of [1,2,3,4,5,6,7,8]"
             class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
             >
-            <label class="control-label" for="spell{{ i }}">spell{{ i }}</label>
+            <label class="control-label" for="spell{{ i }}">法术{{ i }}</label>
             <keira-spell-selector-btn
               [control]="editorService.form.controls['spell' + i]"
               [config]="{ name: 'spell' + i }"
@@ -516,8 +516,8 @@
         <div class="transparent perfect-scrollbar">
           <!-- TODO: implement creature preview like item/quest preview -->
           <div style="color: white; margin: 10px">
-            <p>Preview currently unavailable.</p>
-            <p>Check the new Creature Template Model editor!</p>
+            <p>预览当前不可用。</p>
+            <p>请查看新的生物模板模型编辑器！</p>
           </div>
         </div>
       </div>
