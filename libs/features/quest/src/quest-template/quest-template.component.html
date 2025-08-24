@@ -24,17 +24,17 @@
           <span class="category-title" [translate]="'QUEST.TEMPLATE.BASE'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="ID">ID</label>
+              <label class="control-label" for="ID">任务ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'UNIQUE_ID' | translate: { ENTITY: 'quest' }"></i>
               <input [formControlName]="'ID'" id="ID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-              <label class="control-label" for="LogTitle">LogTitle</label>
+              <label class="control-label" for="LogTitle">任务标题</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.LOG_TITLE' | translate"></i>
               <input [formControlName]="'LogTitle'" id="LogTitle" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="QuestType">QuestType</label>
+              <label class="control-label" for="QuestType">任务类型</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.QuestType"
                 [disabled]="editorService.form.controls.QuestType.disabled"
@@ -44,22 +44,22 @@
               <input [formControlName]="'QuestType'" id="QuestType" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-6 col-lg-4 col-xl-2">
-              <label class="control-label" for="QuestLevel">QuestLevel</label>
+              <label class="control-label" for="QuestLevel">任务等级</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.QUEST_LEVEL' | translate"></i>
               <input [formControlName]="'QuestLevel'" id="QuestLevel" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="MinLevel">MinLevel</label>
+              <label class="control-label" for="MinLevel">最低等级</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.MIN_LEVEL' | translate"></i>
               <input [formControlName]="'MinLevel'" id="MinLevel" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="QuestSortID">QuestSortID</label>
+              <label class="control-label" for="QuestSortID">任务分类ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.QUEST_SORT_ID' | translate"></i>
               <input [formControlName]="'QuestSortID'" id="QuestSortID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="QuestInfoID">QuestInfoID</label>
+              <label class="control-label" for="QuestInfoID">任务信息ID</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.QuestInfoID"
                 [disabled]="editorService.form.controls.QuestInfoID.disabled"
@@ -70,14 +70,14 @@
               <input [formControlName]="'QuestInfoID'" id="QuestInfoID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="SuggestedGroupNum">SuggestedGroupNum</label>
+              <label class="control-label" for="SuggestedGroupNum">建议小队人数</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.SUGGESTED_GROUP_NUM' | translate"></i>
               <input [formControlName]="'SuggestedGroupNum'" id="SuggestedGroupNum" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
               <label class="control-label" for="StartItem">
                 <keira-icon [itemId]="editorService.form.controls.StartItem.value" />
-                StartItem
+                起始物品
               </label>
               <keira-item-selector-btn
                 [control]="editorService.form.controls.StartItem"
@@ -88,7 +88,7 @@
               <input [formControlName]="'StartItem'" id="StartItem" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="Flags">Flags</label>
+              <label class="control-label" for="Flags">任务标记</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.Flags"
                 [disabled]="editorService.form.controls.Flags.disabled"
@@ -97,12 +97,12 @@
               <input [formControlName]="'Flags'" id="Flags" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="TimeAllowed">TimeAllowed</label>
+              <label class="control-label" for="TimeAllowed">限时时间</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.TIME_ALLOWED' | translate"></i>
               <input [formControlName]="'TimeAllowed'" id="TimeAllowed" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="AllowableRaces">AllowableRaces</label>
+              <label class="control-label" for="AllowableRaces">可接种族</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.AllowableRaces"
                 [disabled]="editorService.form.controls.AllowableRaces.disabled"
@@ -111,11 +111,11 @@
               <input [formControlName]="'AllowableRaces'" id="AllowableRaces" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="Unknown0">Unknown0</label>
+              <label class="control-label" for="Unknown0">未知参数0</label>
               <input [formControlName]="'Unknown0'" id="Unknown0" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RequiredPlayerKills">RequiredPlayerKills</label>
+              <label class="control-label" for="RequiredPlayerKills">需要击杀玩家数</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.REQUIRED_PLAYER_KILLS' | translate"></i>
               <input
                 [formControlName]="'RequiredPlayerKills'"
@@ -130,22 +130,22 @@
           <span class="category-title" [translate]="'QUEST.TEMPLATE.POINT_OF_INTEREST'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="POIContinent">POIContinent</label>
+              <label class="control-label" for="POIContinent">兴趣点所在大陆</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.POI_CONTINENT' | translate"></i>
               <input [formControlName]="'POIContinent'" id="POIContinent" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="POIx">POIx</label>
+              <label class="control-label" for="POIx">兴趣点X坐标</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.POI_X' | translate"></i>
               <input [formControlName]="'POIx'" id="POIx" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="POIy">POIy</label>
+              <label class="control-label" for="POIy">兴趣点Y坐标</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.POI_Y' | translate"></i>
               <input [formControlName]="'POIy'" id="POIy" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="POIPriority">POIPriority</label>
+              <label class="control-label" for="POIPriority">兴趣点优先级</label>
               <input [formControlName]="'POIPriority'" id="POIPriority" type="number" class="form-control form-control-sm" />
             </div>
           </div>
@@ -154,19 +154,19 @@
           <span class="category-title" [translate]="'QUEST.TEMPLATE.TEXTS'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-              <label class="control-label" for="QuestCompletionLog">QuestCompletionLog</label>
+              <label class="control-label" for="QuestCompletionLog">任务完成日志</label>
               <textarea [formControlName]="'QuestCompletionLog'" id="QuestCompletionLog" class="form-control form-control-sm"></textarea>
             </div>
             <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-              <label class="control-label" for="QuestDescription">QuestDescription</label>
+              <label class="control-label" for="QuestDescription">任务描述</label>
               <textarea [formControlName]="'QuestDescription'" id="QuestDescription" class="form-control form-control-sm"></textarea>
             </div>
             <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-              <label class="control-label" for="AreaDescription">AreaDescription</label>
+              <label class="control-label" for="AreaDescription">区域描述</label>
               <textarea [formControlName]="'AreaDescription'" id="AreaDescription" class="form-control form-control-sm"></textarea>
             </div>
             <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-              <label class="control-label" for="LogDescription">LogDescription</label>
+              <label class="control-label" for="LogDescription">日志描述</label>
               <textarea [formControlName]="'LogDescription'" id="LogDescription" class="form-control form-control-sm"></textarea>
             </div>
           </div>
@@ -179,7 +179,7 @@
           <div class="row">
             @for (i of [1, 2, 3, 4]; track i) {
               <div class="form-group col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <label class="control-label" for="ObjectiveText{{ i }}">ObjectiveText{{ i }}</label>
+                <label class="control-label" for="ObjectiveText{{ i }}">目标文本{{ i }}</label>
                 <input [formControlName]="'ObjectiveText' + i" id="ObjectiveText{{ i }}" class="form-control form-control-sm" />
               </div>
             }
@@ -197,7 +197,7 @@
                   <div class="col-12">
                     <label class="control-label" for="RequiredItemId{{ i }}">
                       <keira-icon [itemId]="editorService.form.controls['RequiredItemId' + i].value" />
-                      Req.ItemId{{ i }}
+                      需求物品{{ i }}
                     </label>
                     <keira-item-selector-btn
                       [control]="editorService.form.controls['RequiredItemId' + i]"
@@ -212,7 +212,7 @@
                     />
                   </div>
                   <div class="col-12">
-                    <label class="control-label" for="RequiredItemCount{{ i }}">Req.ItemCount{{ i }}</label>
+                    <label class="control-label" for="RequiredItemCount{{ i }}">需求数量{{ i }}</label>
                     <input
                       [formControlName]="'RequiredItemCount' + i"
                       id="RequiredItemCount{{ i }}"
@@ -239,7 +239,7 @@
               <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
                 <div class="row">
                   <div class="col-12">
-                    <label class="control-label" for="RequiredNpcOrGo{{ i }}">Req.NpcOrGo{{ i }}</label>
+                    <label class="control-label" for="RequiredNpcOrGo{{ i }}">需求生物或物体{{ i }}</label>
                     <i
                       class="fas fa-info-circle ms-1"
                       placement="auto"
@@ -253,7 +253,7 @@
                     />
                   </div>
                   <div class="col-12">
-                    <label class="control-label" for="RequiredNpcOrGoCount{{ i }}">Req.NpcOrGoCount{{ i }}</label>
+                    <label class="control-label" for="RequiredNpcOrGoCount{{ i }}">需求数量{{ i }}</label>
                     <i
                       class="fas fa-info-circle ms-1"
                       placement="auto"
@@ -271,7 +271,7 @@
             }
             @for (i of [1, 2]; track i) {
               <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-                <label class="control-label" for="RequiredFactionId{{ i }}">Req.FactionId{{ i }}</label>
+                <label class="control-label" for="RequiredFactionId{{ i }}">需求阵营{{ i }}</label>
                 <keira-faction-selector-btn
                   [config]="{ name: 'RequiredFactionId' + i }"
                   [control]="editorService.form.controls['RequiredFactionId' + i]"
@@ -284,7 +284,7 @@
                   type="number"
                   class="form-control form-control-sm"
                 />
-                <label class="control-label" for="RequiredFactionValue{{ i }}">Req.FactionValue{{ i }}</label>
+                <label class="control-label" for="RequiredFactionValue{{ i }}">需求声望值{{ i }}</label>
                 <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.REQUIRED_FACTION_VALUE' | translate"></i>
                 <input
                   [formControlName]="'RequiredFactionValue' + i"
@@ -305,7 +305,7 @@
                   <div class="col-12">
                     <label class="control-label" for="ItemDrop{{ i }}">
                       <keira-icon [itemId]="editorService.form.controls['ItemDrop' + i].value" />
-                      ItemDrop{{ i }}
+                      掉落物品{{ i }}
                     </label>
                     <keira-item-selector-btn
                       [control]="editorService.form.controls['ItemDrop' + i]"
@@ -315,7 +315,7 @@
                     <input [formControlName]="'ItemDrop' + i" id="ItemDrop{{ i }}" type="number" class="form-control form-control-sm" />
                   </div>
                   <div class="col-12">
-                    <label class="control-label" for="ItemDropQuantity{{ i }}">ItemDropQuantity{{ i }}</label>
+                    <label class="control-label" for="ItemDropQuantity{{ i }}">掉落数量{{ i }}</label>
                     <input
                       [formControlName]="'ItemDropQuantity' + i"
                       id="ItemDropQuantity{{ i }}"
@@ -332,36 +332,36 @@
           <span class="category-title" [translate]="'QUEST.TEMPLATE.REWARDS'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardTitle">RewardTitle</label>
+              <label class="control-label" for="RewardTitle">奖励称号</label>
               <input [formControlName]="'RewardTitle'" id="RewardTitle" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardTalents">RewardTalents</label>
+              <label class="control-label" for="RewardTalents">奖励天赋点</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.REWARD_TALENTS' | translate"></i>
               <input [formControlName]="'RewardTalents'" id="RewardTalents" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardArenaPoints">RewardArenaPoints</label>
+              <label class="control-label" for="RewardArenaPoints">奖励竞技场点数</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.REWARD_ARENA_POINTS' | translate"></i>
               <input [formControlName]="'RewardArenaPoints'" id="RewardArenaPoints" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardNextQuest">RewardNextQuest</label>
+              <label class="control-label" for="RewardNextQuest">后续任务</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.REWARD_NEXT_QUEST' | translate"></i>
               <input [formControlName]="'RewardNextQuest'" id="RewardNextQuest" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardXPDifficulty">RewardXPDifficulty</label>
+              <label class="control-label" for="RewardXPDifficulty">经验值系数</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.REWARD_XP_DIFFICULTY' | translate"></i>
               <input [formControlName]="'RewardXPDifficulty'" id="RewardXPDifficulty" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardMoney">RewardMoney</label>
+              <label class="control-label" for="RewardMoney">奖励金钱</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.REWARD_MONEY' | translate"></i>
               <input [formControlName]="'RewardMoney'" id="RewardMoney" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardMoneyDifficulty">Rew.MoneyDifficulty</label>
+              <label class="control-label" for="RewardMoneyDifficulty">金钱系数</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.REW_MONEY_DIFFICULTY' | translate"></i>
               <input
                 [formControlName]="'RewardMoneyDifficulty'"
@@ -371,11 +371,11 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardDisplaySpell">RewardDisplaySpell</label>
+              <label class="control-label" for="RewardDisplaySpell">显示法术</label>
               <input [formControlName]="'RewardDisplaySpell'" id="RewardDisplaySpell" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardSpell">RewardSpell</label>
+              <label class="control-label" for="RewardSpell">奖励法术</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.REWARD_SPELL' | translate"></i>
               <keira-spell-selector-btn
                 [control]="editorService.form.controls.RewardSpell"
@@ -386,12 +386,12 @@
               <input [formControlName]="'RewardSpell'" id="RewardSpell" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardHonor">RewardHonor</label>
+              <label class="control-label" for="RewardHonor">奖励荣誉</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.REWARD_HONOR' | translate"></i>
               <input [formControlName]="'RewardHonor'" id="RewardHonor" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardKillHonor">RewardKillHonor</label>
+              <label class="control-label" for="RewardKillHonor">击杀荣誉</label>
               <input [formControlName]="'RewardKillHonor'" id="RewardKillHonor" type="number" class="form-control form-control-sm" />
             </div>
           </div>
@@ -405,7 +405,7 @@
                   <div class="col-12">
                     <label class="control-label" for="RewardItem{{ i }}">
                       <keira-icon [itemId]="editorService.form.controls['RewardItem' + i].value" />
-                      Rew.Item{{ i }}
+                      奖励物品{{ i }}
                     </label>
                     <keira-item-selector-btn
                       [control]="editorService.form.controls['RewardItem' + i]"
@@ -415,7 +415,7 @@
                     <input [formControlName]="'RewardItem' + i" id="RewardItem{{ i }}" type="number" class="form-control form-control-sm" />
                   </div>
                   <div class="col-12">
-                    <label class="control-label" for="RewardAmount{{ i }}">Rew.Amount{{ i }}</label>
+                    <label class="control-label" for="RewardAmount{{ i }}">奖励数量{{ i }}</label>
                     <input
                       [formControlName]="'RewardAmount' + i"
                       id="RewardAmount{{ i }}"
@@ -437,7 +437,7 @@
                   <div class="col-12">
                     <label class="control-label" for="RewardChoiceItemID{{ i }}">
                       <keira-icon [itemId]="editorService.form.controls['RewardChoiceItemID' + i].value" />
-                      ChoiceItem{{ i }}
+                      可选物品{{ i }}
                     </label>
                     <keira-item-selector-btn
                       [control]="editorService.form.controls['RewardChoiceItemID' + i]"
@@ -452,7 +452,7 @@
                     />
                   </div>
                   <div class="col-12">
-                    <label class="control-label" for="RewardChoiceItemQuantity{{ i }}">ChoiceItemQuantity{{ i }}</label>
+                    <label class="control-label" for="RewardChoiceItemQuantity{{ i }}">可选物品数量{{ i }}</label>
                     <input
                       [formControlName]="'RewardChoiceItemQuantity' + i"
                       id="RewardChoiceItemQuantity{{ i }}"
@@ -475,7 +475,7 @@
               <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
                 <div class="row">
                   <div class="col-12">
-                    <label class="control-label" for="RewardFactionID{{ i }}">Rew.FactionID{{ i }}</label>
+                    <label class="control-label" for="RewardFactionID{{ i }}">奖励阵营{{ i }}</label>
                     <keira-quest-faction-selector-btn
                       [config]="{ name: 'RewardFactionID' + i }"
                       [control]="editorService.form.controls['RewardFactionID' + i]"
@@ -489,7 +489,7 @@
                     />
                   </div>
                   <div class="col-12">
-                    <label class="control-label" for="RewardFactionValue{{ i }}">Rew.FactionValue{{ i }}</label>
+                    <label class="control-label" for="RewardFactionValue{{ i }}">阵营声望值{{ i }}</label>
                     <input
                       [formControlName]="'RewardFactionValue' + i"
                       id="RewardFactionValue{{ i }}"
@@ -498,7 +498,7 @@
                     />
                   </div>
                   <div class="col-12">
-                    <label class="control-label" for="RewardFactionOverride{{ i }}">Rew.FactionOverride{{ i }}</label>
+                    <label class="control-label" for="RewardFactionOverride{{ i }}">阵营声望覆盖{{ i }}</label>
                     <input
                       [formControlName]="'RewardFactionOverride' + i"
                       id="RewardFactionOverride{{ i }}"

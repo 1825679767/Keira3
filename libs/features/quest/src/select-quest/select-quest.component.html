@@ -17,14 +17,14 @@
       <div class="row">
         <ng-container [formGroup]="selectService.fields">
           <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <input [formControlName]="'ID'" type="number" class="form-control form-control-sm" id="search-id" placeholder="ID" />
+            <input [formControlName]="'ID'" type="number" class="form-control form-control-sm" id="search-id" placeholder="任务ID" />
           </div>
           <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-3">
-            <input [formControlName]="'LogTitle'" class="form-control form-control-sm" id="name" placeholder="Quest Title" />
+            <input [formControlName]="'LogTitle'" class="form-control form-control-sm" id="name" placeholder="任务标题" />
           </div>
         </ng-container>
         <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="Limit" />
+          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="显示数量" />
         </div>
         <div class="mb-2 col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <button id="search-btn" class="btn btn-primary btn-sm" [disabled]="selectService.queryForm.invalid" (click)="onSearch()">
@@ -50,16 +50,16 @@
           [offset]="selectService.pageOffset"
           (page)="onPage($event)"
         >
-          <ngx-datatable-column name="ID" prop="ID" [minWidth]="100">
+          <ngx-datatable-column name="任务ID" prop="ID" [minWidth]="100">
             <ng-template let-row="row" ngx-datatable-cell-template>
               {{ row.ID }}
             </ng-template>
           </ngx-datatable-column>
-          <ngx-datatable-column name="Title" prop="LogTitle" [minWidth]="60" />
-          <ngx-datatable-column name="Type" prop="QuestType" [minWidth]="60" [maxWidth]="60" />
-          <ngx-datatable-column name="Level" prop="QuestLevel" [minWidth]="60" [maxWidth]="60" />
-          <ngx-datatable-column name="MinLevel" prop="MinLevel" [minWidth]="100" [maxWidth]="100" />
-          <ngx-datatable-column name="Description" prop="QuestDescription" [minWidth]="100" />
+          <ngx-datatable-column name="任务标题" prop="LogTitle" [minWidth]="60" />
+          <ngx-datatable-column name="类型" prop="QuestType" [minWidth]="60" [maxWidth]="60" />
+          <ngx-datatable-column name="等级" prop="QuestLevel" [minWidth]="60" [maxWidth]="60" />
+          <ngx-datatable-column name="最低等级" prop="MinLevel" [minWidth]="100" [maxWidth]="100" />
+          <ngx-datatable-column name="任务描述" prop="QuestDescription" [minWidth]="100" />
         </ngx-datatable>
       </div>
     }

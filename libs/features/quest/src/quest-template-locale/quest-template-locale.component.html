@@ -23,49 +23,49 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <label class="control-label" for="id">ID</label>
+              <label class="control-label" for="id">任务ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'UNIQUE_ID' | translate: { ENTITY: 'quest' }"></i>
               <input [formControlName]="'ID'" id="id" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <label class="control-label" for="locale">locale</label>
+              <label class="control-label" for="locale">语言</label>
               <keira-generic-option-selector [control]="editorService.form.controls.locale" id="locale" [optionList]="QUEST_LOCALE" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <label class="control-label" for="id">Title</label>
+              <label class="control-label" for="id">任务标题</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE.LOG_TITLE' | translate"></i>
               <input [formControlName]="'Title'" id="title" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-12 col-md-8 col-lg-9 col-xl-12">
-              <label class="control-label" for="id">Details</label>
+              <label class="control-label" for="id">任务描述</label>
               <textarea [formControlName]="'Details'" id="details" class="form-control form-control-sm"></textarea>
             </div>
             <div class="form-group col-12 col-sm-12 col-md-8 col-lg-9 col-xl-12">
-              <label class="control-label" for="id">Objectives</label>
+              <label class="control-label" for="id">任务目标</label>
               <textarea [formControlName]="'Objectives'" id="objectives" class="form-control form-control-sm"></textarea>
             </div>
             <div class="form-group col-12 col-sm-12 col-md-8 col-lg-9 col-xl-12">
-              <label class="control-label" for="id">EndText</label>
+              <label class="control-label" for="id">结束文本</label>
               <textarea [formControlName]="'EndText'" id="end-text" class="form-control form-control-sm"></textarea>
             </div>
             <div class="form-group col-12 col-sm-12 col-md-8 col-lg-9 col-xl-12">
-              <label class="control-label" for="id">CompletedText</label>
+              <label class="control-label" for="id">完成文本</label>
               <textarea [formControlName]="'CompletedText'" id="completed-text" class="form-control form-control-sm"></textarea>
             </div>
             <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <label class="control-label" for="id">ObjectiveText1</label>
+              <label class="control-label" for="id">目标文本1</label>
               <input [formControlName]="'ObjectiveText1'" id="objective-text-1" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <label class="control-label" for="id">ObjectiveText2</label>
+              <label class="control-label" for="id">目标文本2</label>
               <input [formControlName]="'ObjectiveText2'" id="objective-text-2" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <label class="control-label" for="id">ObjectiveText3</label>
+              <label class="control-label" for="id">目标文本3</label>
               <input [formControlName]="'ObjectiveText3'" id="objective-text-3" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <label class="control-label" for="id">ObjectiveText4</label>
+              <label class="control-label" for="id">目标文本4</label>
               <input [formControlName]="'ObjectiveText4'" id="objective-text-4" class="form-control form-control-sm" />
             </div>
             <div class="col-12 form-error" [hidden]="editorService.isFormIdUnique()">
@@ -99,9 +99,9 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="Id" prop="ID" [minWidth]="80" [maxWidth]="150" />
-              <ngx-datatable-column name="Locale" prop="locale" [minWidth]="200" />
-              <ngx-datatable-column name="Title" prop="Title" [minWidth]="200" />
+              <ngx-datatable-column name="任务ID" prop="ID" [minWidth]="80" [maxWidth]="150" />
+              <ngx-datatable-column name="语言" prop="locale" [minWidth]="200" />
+              <ngx-datatable-column name="任务标题" prop="Title" [minWidth]="200" />
             </ngx-datatable>
           </div>
         </div>

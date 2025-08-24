@@ -24,12 +24,12 @@
           <span class="category-title" [translate]="'QUEST.TEMPLATE_ADDON.ADDON_BASE'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="ID">ID</label>
+              <label class="control-label" for="ID">任务ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'UNIQUE_ID' | translate: { ENTITY: 'quest' }"></i>
               <input [formControlName]="'ID'" id="ID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="PrevQuestID">PrevQuestID</label>
+              <label class="control-label" for="PrevQuestID">前置任务ID</label>
               <keira-quest-selector-btn
                 [control]="editorService.form.controls.PrevQuestID"
                 [disabled]="editorService.form.controls.PrevQuestID.disabled"
@@ -40,7 +40,7 @@
               <input [formControlName]="'PrevQuestID'" id="PrevQuestID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="NextQuestID">NextQuestID</label>
+              <label class="control-label" for="NextQuestID">后续任务ID</label>
               <keira-quest-selector-btn
                 [control]="editorService.form.controls.NextQuestID"
                 [disabled]="editorService.form.controls.NextQuestID.disabled"
@@ -51,12 +51,12 @@
               <input [formControlName]="'NextQuestID'" id="NextQuestID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="MaxLevel">MaxLevel</label>
+              <label class="control-label" for="MaxLevel">最高等级</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE_ADDON.MAX_LEVEL' | translate"></i>
               <input [formControlName]="'MaxLevel'" id="MaxLevel" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="AllowableClasses">AllowableClasses</label>
+              <label class="control-label" for="AllowableClasses">允许职业</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.AllowableClasses"
                 [disabled]="editorService.form.controls.AllowableClasses.disabled"
@@ -66,7 +66,7 @@
               <input [formControlName]="'AllowableClasses'" id="AllowableClasses" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="SourceSpellID">SourceSpellID</label>
+              <label class="control-label" for="SourceSpellID">来源法术ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE_ADDON.SOURCE_SPELL_ID' | translate"></i>
               <keira-spell-selector-btn
                 [control]="editorService.form.controls.SourceSpellID"
@@ -77,17 +77,17 @@
               <input [formControlName]="'SourceSpellID'" id="SourceSpellID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="ExclusiveGroup">ExclusiveGroup</label>
+              <label class="control-label" for="ExclusiveGroup">互斥组</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE_ADDON.EXCLUSIVE_GROUP' | translate"></i>
               <input [formControlName]="'ExclusiveGroup'" id="ExclusiveGroup" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="ProvidedItemCount">ProvidedItemCount</label>
+              <label class="control-label" for="ProvidedItemCount">提供物品数量</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE_ADDON.PROVIDED_ITEM_COUNT' | translate"></i>
               <input [formControlName]="'ProvidedItemCount'" id="ProvidedItemCount" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="SpecialFlags">SpecialFlags</label>
+              <label class="control-label" for="SpecialFlags">特殊标记</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.SpecialFlags"
                 [disabled]="editorService.form.controls.SpecialFlags.disabled"
@@ -101,7 +101,7 @@
           <span class="category-title" [translate]="'QUEST.TEMPLATE_ADDON.ADDON_REQUIREMENTS'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RequiredSkillID">Req.SkillID</label>
+              <label class="control-label" for="RequiredSkillID">需求技能ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE_ADDON.REQ_SKILL_ID' | translate"></i>
               <keira-skill-selector-btn
                 [config]="{ name: 'RequiredSkillID' }"
@@ -111,7 +111,7 @@
               <input [formControlName]="'RequiredSkillID'" id="RequiredSkillID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RequiredSkillPoints">Req.SkillPoints</label>
+              <label class="control-label" for="RequiredSkillPoints">需求技能点数</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE_ADDON.REQ_SKILL_POINTS' | translate"></i>
               <input
                 [formControlName]="'RequiredSkillPoints'"
@@ -121,7 +121,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RequiredMinRepFaction">Req.MinRepFaction</label>
+              <label class="control-label" for="RequiredMinRepFaction">需求最低声望阵营</label>
               <keira-faction-selector-btn
                 [config]="{ name: 'RequiredMinRepFaction' }"
                 [control]="editorService.form.controls.RequiredMinRepFaction"
@@ -135,7 +135,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RequiredMinRepValue">Req.MinRepValue</label>
+              <label class="control-label" for="RequiredMinRepValue">需求最低声望值</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE_ADDON.REQ_MIN_REP_VALUE' | translate"></i>
               <input
                 [formControlName]="'RequiredMinRepValue'"
@@ -145,7 +145,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RequiredMaxRepFaction">Req.MaxRepFaction</label>
+              <label class="control-label" for="RequiredMaxRepFaction">需求最高声望阵营</label>
               <keira-faction-selector-btn
                 [config]="{ name: 'RequiredMaxRepFaction' }"
                 [control]="editorService.form.controls.RequiredMaxRepFaction"
@@ -159,7 +159,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RequiredMaxRepValue">Req.MaxRepValue</label>
+              <label class="control-label" for="RequiredMaxRepValue">需求最高声望值</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE_ADDON.REQ_MAX_REP_VALUE' | translate"></i>
               <input
                 [formControlName]="'RequiredMaxRepValue'"
@@ -174,7 +174,7 @@
           <span class="category-title" [translate]="'QUEST.TEMPLATE_ADDON.ADDON_REWARDS'"></span>
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardMailTemplateID">RewardMailTemplateID</label>
+              <label class="control-label" for="RewardMailTemplateID">奖励邮件模板ID</label>
               <i
                 class="fas fa-info-circle ms-1"
                 placement="auto"
@@ -188,7 +188,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-5 col-lg-4 col-xl-2">
-              <label class="control-label" for="RewardMailDelay">RewardMailDelay</label>
+              <label class="control-label" for="RewardMailDelay">奖励邮件延迟</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'QUEST.TEMPLATE_ADDON.REWARD_MAIL_DELAY' | translate"></i>
               <input [formControlName]="'RewardMailDelay'" id="RewardMailDelay" type="number" class="form-control form-control-sm" />
             </div>
