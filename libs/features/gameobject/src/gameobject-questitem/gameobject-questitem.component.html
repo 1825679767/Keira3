@@ -25,7 +25,7 @@
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
               <label class="control-label" for="ItemId">
                 <keira-icon [itemId]="editorService.form.controls.ItemId.value" />
-                ItemId
+                物品ID
               </label>
               <keira-item-selector-btn
                 [control]="editorService.form.controls.ItemId"
@@ -35,7 +35,7 @@
               <input [formControlName]="'ItemId'" id="ItemId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-              <label class="control-label" for="Idx">Idx</label>
+              <label class="control-label" for="Idx">索引</label>
               <input [formControlName]="'Idx'" id="Idx" type="number" class="form-control form-control-sm" />
             </div>
             <div class="col-12 form-error" [hidden]="editorService.isFormIdUnique()">
@@ -74,9 +74,9 @@
                   <keira-icon [itemId]="row.ItemId" />
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="Idx" prop="Idx" [minWidth]="80" [maxWidth]="120" />
-              <ngx-datatable-column name="ItemId" prop="ItemId" [maxWidth]="150" />
-              <ngx-datatable-column name="Name" [minWidth]="200">
+              <ngx-datatable-column name="索引" prop="Idx" [minWidth]="80" [maxWidth]="120" />
+              <ngx-datatable-column name="物品ID" prop="ItemId" [maxWidth]="150" />
+              <ngx-datatable-column name="物品名称" [minWidth]="200">
                 <ng-template let-row="row" ngx-datatable-cell-template>
                   {{ editorService.queryService.getItemNameById(row.ItemId) | async }}
                 </ng-template>

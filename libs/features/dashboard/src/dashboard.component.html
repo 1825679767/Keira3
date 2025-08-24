@@ -47,7 +47,7 @@
                 {{ coreVersions.core_revision }}
               </a>
               <button class="btn btn-secondary btn-sm ms-2 px-2 py-1" [ngxClipboard] [cbContent]="commitUrl">
-                <i class="far fa-copy fa-sm"></i>
+                <i class="far fa-copy fa-sm"></i> 复制
               </button>
             </td>
           </tr>
@@ -67,11 +67,11 @@
 
     <div class="form-check">
       <input class="form-check-input" type="checkbox" [(ngModel)]="configService.debugMode" id="debug-mode" />
-      <label class="form-check-label" for="debug-mode" [translate]="'DASHBOARD.DEBUG_MODE'"> </label>
+      <label class="form-check-label" for="debug-mode" [translate]="'DASHBOARD.DEBUG_MODE'">调试模式</label>
     </div>
     <!--    <div class="form-check">-->
     <!--      <input class="form-check-input" type="checkbox" [(ngModel)]="configService.darkMode" id="dark-mode" />-->
-    <!--      <label class="form-check-label" for="dark-mode" [translate]="'DASHBOARD.DARK_MODE'"> </label>-->
+    <!--      <label class="form-check-label" for="dark-mode" [translate]="'DASHBOARD.DARK_MODE'">暗黑模式</label>-->
     <!--    </div>-->
   </div>
 </div>

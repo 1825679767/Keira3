@@ -23,11 +23,11 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="guid">guid</label>
+              <label class="control-label" for="guid">全局唯一ID</label>
               <input [formControlName]="'guid'" id="guid" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="map">map</label>
+              <label class="control-label" for="map">地图</label>
               <keira-map-selector-btn
                 [config]="{ name: 'map' }"
                 [control]="editorService.form.controls.map"
@@ -36,11 +36,11 @@
               <input [formControlName]="'map'" id="map" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="zoneId">zoneId</label>
+              <label class="control-label" for="zoneId">区域ID</label>
               <input [formControlName]="'zoneId'" id="zoneId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="areaId">areaId</label>
+              <label class="control-label" for="areaId">子区域ID</label>
               <keira-area-selector-btn
                 [config]="{ name: 'areaId' }"
                 [control]="editorService.form.controls.areaId"
@@ -49,7 +49,7 @@
               <input [formControlName]="'areaId'" id="areaId" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="spawnMask">spawnMask</label>
+              <label class="control-label" for="spawnMask">刷新模式</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.spawnMask"
                 [disabled]="editorService.form.controls.spawnMask.disabled"
@@ -59,7 +59,7 @@
               <input [formControlName]="'spawnMask'" id="spawnMask" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="phaseMask">phaseMask</label>
+              <label class="control-label" for="phaseMask">相位掩码</label>
               <keira-flags-selector-btn
                 [control]="editorService.form.controls.phaseMask"
                 [disabled]="editorService.form.controls.phaseMask.disabled"
@@ -69,59 +69,59 @@
               <input [formControlName]="'phaseMask'" id="phaseMask" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="position_x">position_x</label>
+              <label class="control-label" for="position_x">X坐标</label>
               <input [formControlName]="'position_x'" id="position_x" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="position_y">position_y</label>
+              <label class="control-label" for="position_y">Y坐标</label>
               <input [formControlName]="'position_y'" id="position_y" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="position_z">position_z</label>
+              <label class="control-label" for="position_z">Z坐标</label>
               <input [formControlName]="'position_z'" id="position_z" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="orientation">orientation</label>
+              <label class="control-label" for="orientation">朝向</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'GAMEOBJECT.SPAWN.ORIENTATION' | translate"></i>
               <input [formControlName]="'orientation'" id="orientation" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="rotation0">rotation0</label>
+              <label class="control-label" for="rotation0">旋转0</label>
               <input [formControlName]="'rotation0'" id="rotation0" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="rotation1">rotation1</label>
+              <label class="control-label" for="rotation1">旋转1</label>
               <input [formControlName]="'rotation1'" id="rotation1" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="rotation2">rotation2</label>
+              <label class="control-label" for="rotation2">旋转2</label>
               <input [formControlName]="'rotation2'" id="rotation2" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="rotation3">rotation3</label>
+              <label class="control-label" for="rotation3">旋转3</label>
               <input [formControlName]="'rotation3'" id="rotation3" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="spawntimesecs">spawntimesecs</label>
+              <label class="control-label" for="spawntimesecs">重生时间(秒)</label>
               <input [formControlName]="'spawntimesecs'" id="spawntimesecs" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="animprogress">animprogress</label>
+              <label class="control-label" for="animprogress">动画进度</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'GAMEOBJECT.SPAWN.ANIMPROGRESS' | translate"></i>
               <input [formControlName]="'animprogress'" id="animprogress" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="state">state</label>
+              <label class="control-label" for="state">状态</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'GAMEOBJECT.SPAWN.STATE' | translate"></i>
               <input [formControlName]="'state'" id="state" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="ScriptName">ScriptName</label>
+              <label class="control-label" for="ScriptName">脚本名称</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'GAMEOBJECT.SPAWN.SCRIPT_NAME' | translate"></i>
               <input [formControlName]="'ScriptName'" id="ScriptName" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-              <label class="control-label" for="Comment">Comment</label>
+              <label class="control-label" for="Comment">注释</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'GAMEOBJECT.SPAWN.COMMENT' | translate"></i>
               <input [formControlName]="'Comment'" id="Comment" class="form-control form-control-sm" />
             </div>
@@ -156,25 +156,25 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="guid" prop="guid" [minWidth]="80" />
-              <ngx-datatable-column name="M" prop="map" [minWidth]="42" />
-              <ngx-datatable-column name="Z" prop="zoneId" [minWidth]="42" />
-              <ngx-datatable-column name="A" prop="areaId" [minWidth]="42" />
-              <ngx-datatable-column name="SM" prop="spawnMask" [minWidth]="42" />
-              <ngx-datatable-column name="PM" prop="phaseMask" [minWidth]="42" />
-              <ngx-datatable-column name="position_x" prop="position_x" [minWidth]="90" />
-              <ngx-datatable-column name="position_y" prop="position_y" [minWidth]="90" />
-              <ngx-datatable-column name="position_z" prop="position_z" [minWidth]="90" />
-              <ngx-datatable-column name="orient." prop="orientation" [minWidth]="90" />
-              <ngx-datatable-column name="rot.0" prop="rotation0" [minWidth]="90" />
-              <ngx-datatable-column name="rot.1" prop="rotation1" [minWidth]="90" />
-              <ngx-datatable-column name="rot.2" prop="rotation2" [minWidth]="90" />
-              <ngx-datatable-column name="rot.3" prop="rotation3" [minWidth]="90" />
-              <ngx-datatable-column name="Time" prop="spawntimesecs" [minWidth]="50" />
-              <ngx-datatable-column name="anim" prop="animprogress" [minWidth]="90" />
-              <ngx-datatable-column name="state" prop="state" [minWidth]="90" />
-              <ngx-datatable-column name="ScriptName" prop="ScriptName" [minWidth]="80" />
-              <ngx-datatable-column name="Comment" prop="Comment" [minWidth]="80" />
+              <ngx-datatable-column name="全局唯一ID" prop="guid" [minWidth]="80" />
+              <ngx-datatable-column name="地图" prop="map" [minWidth]="42" />
+              <ngx-datatable-column name="区域" prop="zoneId" [minWidth]="42" />
+              <ngx-datatable-column name="子区域" prop="areaId" [minWidth]="42" />
+              <ngx-datatable-column name="刷新" prop="spawnMask" [minWidth]="42" />
+              <ngx-datatable-column name="相位" prop="phaseMask" [minWidth]="42" />
+              <ngx-datatable-column name="X坐标" prop="position_x" [minWidth]="90" />
+              <ngx-datatable-column name="Y坐标" prop="position_y" [minWidth]="90" />
+              <ngx-datatable-column name="Z坐标" prop="position_z" [minWidth]="90" />
+              <ngx-datatable-column name="朝向" prop="orientation" [minWidth]="90" />
+              <ngx-datatable-column name="旋转0" prop="rotation0" [minWidth]="90" />
+              <ngx-datatable-column name="旋转1" prop="rotation1" [minWidth]="90" />
+              <ngx-datatable-column name="旋转2" prop="rotation2" [minWidth]="90" />
+              <ngx-datatable-column name="旋转3" prop="rotation3" [minWidth]="90" />
+              <ngx-datatable-column name="重生时间" prop="spawntimesecs" [minWidth]="50" />
+              <ngx-datatable-column name="动画" prop="animprogress" [minWidth]="90" />
+              <ngx-datatable-column name="状态" prop="state" [minWidth]="90" />
+              <ngx-datatable-column name="脚本名称" prop="ScriptName" [minWidth]="80" />
+              <ngx-datatable-column name="注释" prop="Comment" [minWidth]="80" />
             </ngx-datatable>
           </div>
         </div>

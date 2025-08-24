@@ -23,12 +23,12 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="guid">guid</label>
+              <label class="control-label" for="guid">全局唯一ID</label>
               <i class="fas fa-info-circle ms-1" placement="auto" [tooltip]="'GAMEOBJECT.SPAWN_ADDON.GUID' | translate"></i>
               <input [formControlName]="'guid'" id="guid" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="guid">invisibilityType</label>
+              <label class="control-label" for="guid">隐身类型</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.invisibilityType"
                 [disabled]="editorService.form.controls.invisibilityType.disabled"
@@ -38,7 +38,7 @@
               <input [formControlName]="'invisibilityType'" id="invisibilityType" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-              <label class="control-label" for="guid">invisibilityValue</label>
+              <label class="control-label" for="guid">隐身值</label>
               <input [formControlName]="'invisibilityValue'" id="invisibilityValue" type="number" class="form-control form-control-sm" />
             </div>
             <div class="col-12 form-error" [hidden]="editorService.isFormIdUnique()">
@@ -80,9 +80,9 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="guid" prop="guid" [minWidth]="80" />
-              <ngx-datatable-column name="invisibilityType" prop="invisibilityType" />
-              <ngx-datatable-column name="invisibilityValue" prop="invisibilityValue" />
+              <ngx-datatable-column name="全局唯一ID" prop="guid" [minWidth]="80" />
+              <ngx-datatable-column name="隐身类型" prop="invisibilityType" />
+              <ngx-datatable-column name="隐身值" prop="invisibilityValue" />
             </ngx-datatable>
           </div>
         </div>
