@@ -31,7 +31,7 @@ export class AppComponent extends SubscriptionHandler implements OnInit {
   readonly toastrService = inject(ToastrService);
   private readonly sqliteQueryService = inject(SqliteQueryService);
   private readonly electronService = inject(ElectronService);
-  //private readonly http = inject(HttpClient);
+  private readonly http = inject(HttpClient);
   private readonly changeDetectorRef = inject(ChangeDetectorRef);
 
   ngOnInit(): void {
