@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <form [formGroup]="form" class="form-group">
     <div class="content-block">
-      <p class="lead">Select a Source Type</p>
+      <p class="lead">选择源类型</p>
 
       @for (key of SAI_SEARCH_TYPES_KEYS; track key) {
         <div class="radio-container">
@@ -16,31 +16,31 @@
     @if (sourceTypeControl.valid) {
       <div class="content-block">
         <p class="lead">
-          Select
+          选择
           @if (isTypeCreatureSelected) {
-            Creature
+            生物
           }
           @if (isTypeGameobjectSelected) {
-            Gameobject
+            物体
           }
           @if (isTypeAreatriggerSelected) {
-            Areatrigger
+            区域触发器
           }
           @if (isTypeTimedActionlistsSelected) {
-            TimedActionlist
+            定时动作列表
           }
         </p>
         <div class="row">
           <div class="form-group col-12">
             <label class="control-label mb-2" for="entryorguid">
               @if (isTypeCreatureSelected || isTypeGameobjectSelected) {
-                Insert a negative number to select a GUID(-) or a positive number to select an Entry(+)
+                输入负数选择GUID(-)或输入正数选择模板ID(+)
               }
               @if (isTypeAreatriggerSelected) {
-                Insert the Areatrigger ID
+                输入区域触发器ID
               }
               @if (isTypeTimedActionlistsSelected) {
-                TimedActionlists IDs are composed by the <strong>Creature's Entry</strong> followed by a <strong>2-digits number</strong>
+                定时动作列表ID由<strong>生物模板ID</strong>加上<strong>两位数字</strong>组成
               }
             </label>
             @if (isTypeCreatureSelected) {
@@ -58,13 +58,13 @@
               />
             }
             <input [formControlName]="'entryorguid'" id="entryorguid" type="number" class="form-control form-control-sm" />
-            <div class="mt-2">If the selected entity does not have any SmartScripts yet, new ones will be created.</div>
+            <div class="mt-2">如果所选实体还没有SmartAI脚本，将会创建新的脚本。</div>
           </div>
         </div>
         <div class="row mt-3">
           <div class="col-12">
             <button class="btn btn-success float-end" [disabled]="entryOrGuidControl.invalid" (click)="onEdit()" id="edit-btn">
-              Edit SmartAI
+              编辑SmartAI
             </button>
           </div>
         </div>
