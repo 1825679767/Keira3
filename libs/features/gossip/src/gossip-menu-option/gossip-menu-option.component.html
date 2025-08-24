@@ -23,12 +23,12 @@
         <form [formGroup]="editorService.form" class="form-group edit-form">
           <div class="row">
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="OptionID">OptionID</label>
+              <label class="control-label" for="OptionID">选项ID</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'GOSSIP.GOSSIP_MENU_OPTION.OPTION_ID' | translate"></i>
               <input [formControlName]="'OptionID'" id="OptionID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="OptionIcon">OptionIcon</label>
+              <label class="control-label" for="OptionIcon">选项图标</label>
               <keira-generic-option-icon-selector
                 [control]="editorService.form.controls.OptionIcon"
                 id="OptionIcon"
@@ -36,12 +36,12 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="OptionText">OptionText</label>
+              <label class="control-label" for="OptionText">选项文本</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'GOSSIP.GOSSIP_MENU_OPTION.OPTION_TEXT' | translate"></i>
               <input [formControlName]="'OptionText'" id="OptionText" type="text" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="OptionBroadcastTextID">OptionBroadcastTextID</label>
+              <label class="control-label" for="OptionBroadcastTextID">广播文本ID</label>
               <i
                 class="fas fa-info-circle ms-1"
                 [placement]="'auto'"
@@ -55,7 +55,7 @@
               />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="OptionType">OptionType</label>
+              <label class="control-label" for="OptionType">选项类型</label>
               <keira-single-value-selector-btn
                 [control]="editorService.form.controls.OptionType"
                 [disabled]="editorService.form.controls.OptionType.disabled"
@@ -65,7 +65,7 @@
               <input [formControlName]="'OptionType'" id="OptionType" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="OptionNpcFlag">OptionNpcFlag</label>
+              <label class="control-label" for="OptionNpcFlag">NPC标识</label>
               <i
                 class="fas fa-info-circle ms-1"
                 [placement]="'auto'"
@@ -74,7 +74,7 @@
               <input [formControlName]="'OptionNpcFlag'" id="OptionNpcFlag" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="ActionMenuID">ActionMenuID</label>
+              <label class="control-label" for="ActionMenuID">动作菜单ID</label>
               <i
                 class="fas fa-info-circle ms-1"
                 [placement]="'auto'"
@@ -83,27 +83,27 @@
               <input [formControlName]="'ActionMenuID'" id="ActionMenuID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="ActionPoiID">ActionPoiID</label>
+              <label class="control-label" for="ActionPoiID">动作坐标ID</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'GOSSIP.GOSSIP_MENU_OPTION.ACTION_POI_ID' | translate"></i>
               <input [formControlName]="'ActionPoiID'" id="ActionPoiID" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="BoxCoded">BoxCoded</label>
+              <label class="control-label" for="BoxCoded">密码框</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'GOSSIP.GOSSIP_MENU_OPTION.BOX_CODED' | translate"></i>
               <input [formControlName]="'BoxCoded'" id="BoxCoded" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="BoxMoney">BoxMoney</label>
+              <label class="control-label" for="BoxMoney">金币数量</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'GOSSIP.GOSSIP_MENU_OPTION.BOX_MONEY' | translate"></i>
               <input [formControlName]="'BoxMoney'" id="BoxMoney" type="number" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="BoxText">BoxText</label>
+              <label class="control-label" for="BoxText">对话框文本</label>
               <i class="fas fa-info-circle ms-1" [placement]="'auto'" [tooltip]="'GOSSIP.GOSSIP_MENU_OPTION.BOX_TEXT' | translate"></i>
               <input [formControlName]="'BoxText'" id="BoxText" type="text" class="form-control form-control-sm" />
             </div>
             <div class="form-group col-12 col-sm-6 col-md-4 col-xl-2">
-              <label class="control-label" for="BoxBroadcastTextID">BoxBroadcastTextID</label>
+              <label class="control-label" for="BoxBroadcastTextID">对话框广播文本ID</label>
               <i
                 class="fas fa-info-circle ms-1"
                 [placement]="'auto'"
@@ -142,18 +142,18 @@
                   <i [hidden]="!editorService.isRowSelected(row)" class="fas fa-chevron-right"></i>
                 </ng-template>
               </ngx-datatable-column>
-              <ngx-datatable-column name="OptionID" prop="OptionID" [minWidth]="35" />
-              <ngx-datatable-column name="OptionIcon" prop="OptionIcon" [minWidth]="35" />
-              <ngx-datatable-column name="OptionText" prop="OptionText" [minWidth]="50" />
-              <ngx-datatable-column name="OptionBroadcastTextID" prop="OptionBroadcastTextID" [minWidth]="50" />
-              <ngx-datatable-column name="OptionType" prop="OptionType" [minWidth]="35" />
-              <ngx-datatable-column name="OptionNpcFlag" prop="OptionNpcFlag" [minWidth]="50" />
-              <ngx-datatable-column name="ActionMenuID" prop="ActionMenuID" [minWidth]="50" />
-              <ngx-datatable-column name="ActionPoiID" prop="ActionPoiID" [minWidth]="50" />
-              <ngx-datatable-column name="BoxCoded" prop="BoxCoded" [minWidth]="50" />
-              <ngx-datatable-column name="BoxMoney" prop="BoxMoney" [minWidth]="35" />
-              <ngx-datatable-column name="BoxText" prop="BoxText" [minWidth]="50" />
-              <!-- <ngx-datatable-column name="BoxBroadcastTextID"     prop="BoxBroadcastTextID"    [minWidth]="70" /> -->
+              <ngx-datatable-column name="选项ID" prop="OptionID" [minWidth]="35" />
+              <ngx-datatable-column name="选项图标" prop="OptionIcon" [minWidth]="35" />
+              <ngx-datatable-column name="选项文本" prop="OptionText" [minWidth]="50" />
+              <ngx-datatable-column name="广播文本ID" prop="OptionBroadcastTextID" [minWidth]="50" />
+              <ngx-datatable-column name="选项类型" prop="OptionType" [minWidth]="35" />
+              <ngx-datatable-column name="NPC标识" prop="OptionNpcFlag" [minWidth]="50" />
+              <ngx-datatable-column name="动作菜单ID" prop="ActionMenuID" [minWidth]="50" />
+              <ngx-datatable-column name="动作坐标ID" prop="ActionPoiID" [minWidth]="50" />
+              <ngx-datatable-column name="密码框" prop="BoxCoded" [minWidth]="50" />
+              <ngx-datatable-column name="金币数量" prop="BoxMoney" [minWidth]="35" />
+              <ngx-datatable-column name="对话框文本" prop="BoxText" [minWidth]="50" />
+              <!-- <ngx-datatable-column name="对话框广播文本ID"     prop="BoxBroadcastTextID"    [minWidth]="70" /> -->
             </ngx-datatable>
           </div>
         </div>

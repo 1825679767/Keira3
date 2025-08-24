@@ -17,14 +17,14 @@
       <div class="row">
         <ng-container [formGroup]="selectService.fields">
           <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <input [formControlName]="'MenuID'" type="number" class="form-control form-control-sm" id="search-id" placeholder="MenuID" />
+            <input [formControlName]="'MenuID'" type="number" class="form-control form-control-sm" id="search-id" placeholder="菜单编号" />
           </div>
           <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-3">
-            <input [formControlName]="'TextID'" type="number" class="form-control form-control-sm" id="name" placeholder="TextID" />
+            <input [formControlName]="'TextID'" type="number" class="form-control form-control-sm" id="name" placeholder="文本编号" />
           </div>
         </ng-container>
         <div class="form-group col-sm-6 col-md-4 col-lg-3 col-xl-2">
-          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="Limit" />
+          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="显示数量" />
         </div>
         <div class="mb-2 col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <button id="search-btn" class="btn btn-primary btn-sm" [disabled]="selectService.queryForm.invalid" (click)="onSearch()">
@@ -50,18 +50,18 @@
           [offset]="selectService.pageOffset"
           (page)="onPage($event)"
         >
-          <ngx-datatable-column name="MenuID" prop="MenuID" [minWidth]="80">
+          <ngx-datatable-column name="菜单编号" prop="MenuID" [minWidth]="80">
             <ng-template let-row="row" ngx-datatable-cell-template>
               {{ row.MenuID }}
             </ng-template>
           </ngx-datatable-column>
-          <ngx-datatable-column name="TextID" prop="TextID" [minWidth]="80" />
-          <ngx-datatable-column name="Text0_0" [minWidth]="200">
+          <ngx-datatable-column name="文本编号" prop="TextID" [minWidth]="80" />
+          <ngx-datatable-column name="联盟文本" [minWidth]="200">
             <ng-template let-row="row" ngx-datatable-cell-template>
               {{ queryService.getText0ById(row.TextID) | async }}
             </ng-template>
           </ngx-datatable-column>
-          <ngx-datatable-column name="Text0_1" [minWidth]="200">
+          <ngx-datatable-column name="部落文本" [minWidth]="200">
             <ng-template let-row="row" ngx-datatable-cell-template>
               {{ queryService.getText1ById(row.TextID) | async }}
             </ng-template>
