@@ -1,77 +1,77 @@
 import { Option } from '@keira/shared/constants';
 
-// ConditionValue1
+// 条件值1
 
 export const CONDITION_OBJECT_ENTRY_GUID_CV1: Option[] = [
-  { value: 3, name: 'TYPEID_UNIT' },
-  { value: 4, name: 'TYPEID_PLAYER' },
-  { value: 5, name: 'TYPEID_GAMEOBJECT' },
-  { value: 7, name: 'TYPEID_CORPSE (player corpse, after spirit release)' },
+  { value: 3, name: '单位类型' },
+  { value: 4, name: '玩家类型' },
+  { value: 5, name: '游戏对象类型' },
+  { value: 7, name: '尸体类型（玩家释放灵魂后的尸体）' },
 ];
 
 export const CONDITION_STAND_STATE_CV1: Option[] = [
-  { value: 0, name: 'Exact state used in ConditionValue2' },
-  { value: 1, name: 'Any type of state in ConditionValue2' },
+  { value: 0, name: '使用条件值2中的精确状态' },
+  { value: 1, name: '使用条件值2中的任意状态' },
 ];
 
-// ConditionValue2
+// 条件值2
 
 export const CONDITION_LEVEL_CV2: Option[] = [
-  { value: 0, name: 'Level must be equal' },
-  { value: 1, name: 'Level must be higher' },
-  { value: 2, name: 'Level must be lower' },
-  { value: 3, name: 'Level must be equal or higher' },
-  { value: 4, name: 'Level must be equal or lower' },
+  { value: 0, name: '等级必须相等' },
+  { value: 1, name: '等级必须更高' },
+  { value: 2, name: '等级必须更低' },
+  { value: 3, name: '等级必须大于等于' },
+  { value: 4, name: '等级必须小于等于' },
 ];
 
 export const CONDITION_RELATION_TO_CV2: Option[] = [
-  { value: 0, name: 'RELATION_SELF' },
-  { value: 1, name: 'RELATION_IN_PARTY' },
-  { value: 2, name: 'RELATION_IN_RAID_OR_PARTY' },
-  { value: 3, name: 'RELATION_OWNED_BY (ConditionTarget is owned by ConditionValue1)' },
-  { value: 4, name: 'RELATION_PASSENGER_OF (ConditionTarget is passenger of ConditionValue1)' },
-  { value: 5, name: 'RELATION_CREATED_BY (ConditionTarget is summoned by ConditionValue1)' },
+  { value: 0, name: '自身关系' },
+  { value: 1, name: '小队成员关系' },
+  { value: 2, name: '团队或小队成员关系' },
+  { value: 3, name: '所属关系（条件目标被条件值1所拥有）' },
+  { value: 4, name: '乘客关系（条件目标是条件值1的乘客）' },
+  { value: 5, name: '创建关系（条件目标是由条件值1召唤的）' },
 ];
 
 export const CONDITION_HP_VAL_CV2: Option[] = [
-  { value: 0, name: 'HP must be equal' },
-  { value: 1, name: 'HP must be higher' },
-  { value: 2, name: 'HP must be lower' },
-  { value: 3, name: 'HP must be equal or higher' },
-  { value: 4, name: 'HP must be equal or lower' },
+  { value: 0, name: '生命值必须相等' },
+  { value: 1, name: '生命值必须更高' },
+  { value: 2, name: '生命值必须更低' },
+  { value: 3, name: '生命值必须大于等于' },
+  { value: 4, name: '生命值必须小于等于' },
 ];
 
 export const CONDITION_HP_PCT_CV2: Option[] = [
-  { value: 0, name: 'Percentage of max HP must be equal' },
-  { value: 1, name: 'Percentage of max HP must be higher' },
-  { value: 2, name: 'Percentage of max HP must be lower' },
-  { value: 3, name: 'Percentage of max HP must be equal or higher' },
-  { value: 4, name: 'Percentage of max HP must be equal or lower' },
+  { value: 0, name: '最大生命值百分比必须相等' },
+  { value: 1, name: '最大生命值百分比必须更高' },
+  { value: 2, name: '最大生命值百分比必须更低' },
+  { value: 3, name: '最大生命值百分比必须大于等于' },
+  { value: 4, name: '最大生命值百分比必须小于等于' },
 ];
 
 export const CONDITION_STAND_STATE_CV2: Option[] = [
-  { value: 0, name: 'Standing' },
-  { value: 1, name: 'Sitting' },
+  { value: 0, name: '站立' },
+  { value: 1, name: '坐下' },
 ];
 
-// ConditionValue3
+// 条件值3
 
 export const CONDITION_DISTANCE_TO_CV3: Option[] = [
-  { value: 0, name: 'Distance must be equal to ConditionValue2' },
-  { value: 1, name: 'Distance must be higher than ConditionValue2' },
-  { value: 2, name: 'Distance must be lower than ConditionValue2' },
-  { value: 3, name: 'distance must be equal to or higher than ConditionValue2' },
-  { value: 4, name: 'distance must be equal to or lower than ConditionValue2' },
+  { value: 0, name: '距离必须等于条件值2' },
+  { value: 1, name: '距离必须大于条件值2' },
+  { value: 2, name: '距离必须小于条件值2' },
+  { value: 3, name: '距离必须大于等于条件值2' },
+  { value: 4, name: '距离必须小于等于条件值2' },
 ];
 
 export const CONDITION_NEAR_CREATURE_CV3: Option[] = [
-  { value: 0, name: 'Alive' },
-  { value: 1, name: 'Dead' },
+  { value: 0, name: '存活' },
+  { value: 1, name: '死亡' },
 ];
 
 export const CONDITION_INSTANCE_INFO_CV3: Option[] = [
-  { value: 0, name: 'INSTANCE_INFO_DATA' },
-  { value: 1, name: 'INSTANCE_INFO_GUID_DATA' },
-  { value: 2, name: 'INSTANCE_INFO_BOSS_STATE' },
-  { value: 3, name: 'INSTANCE_INFO_DATA64' },
+  { value: 0, name: '副本信息数据' },
+  { value: 1, name: '副本信息GUID数据' },
+  { value: 2, name: '副本信息首领状态' },
+  { value: 3, name: '副本信息数据64' },
 ];

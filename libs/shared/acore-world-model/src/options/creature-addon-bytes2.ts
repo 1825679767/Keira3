@@ -1,9 +1,9 @@
 import { Option } from '@keira/shared/constants';
 
-// TODO: not all possible values are listed here
+// TODO: 此处未列出所有可能的值
 
 export const CREATURE_ADDON_BYTES_2: Option[] = [
-  { value: 0, name: 'STATE_UNARMED (not prepared weapon)' },
-  { value: 1, name: 'STATE_MELEE (prepared melee weapon)' },
-  { value: 2, name: 'STATE_RANGED (prepared ranged weapon)' },
+  { value: 0, name: '未武装状态（未准备武器）' },
+  { value: 1, name: '近战状态（已准备近战武器）' },
+  { value: 2, name: '远程状态（已准备远程武器）' },
 ];
