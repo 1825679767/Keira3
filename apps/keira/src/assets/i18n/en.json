@@ -527,7 +527,7 @@
       "DMG_MAX": "物品可以施放或触发的法术",
       "SPELL_CHARGES": "物品可以施放法术的次数。如果为0,则可以无限充能。如果为负数,则在充能耗尽后物品也会被删除。如果为正数,则在所有充能用完后物品不会被删除。",
       "SPELL_PPM_RATES": "控制法术触发频率的每分钟触发率(如果#spelltrigger == 2)。",
-      "SPELL_COOLDOWNS": "控制法术使用频率的特定法术冷却时间(毫秒)。使用-1以使用默认法术冷却时间。注意:这不是饰品等物品上常见的“命中时触发”效果的“内部冷却”。",
+      "SPELL_COOLDOWNS": "控制法术使用频率的特定法术冷却时间(毫秒)。使用-1以使用默认法术冷却时间。注意:这不是饰品等物品上常见的"命中时触发"效果的"内部冷却"。",
       "SPELL_CATEGORIES": "法术所属的类别",
       "SPELL_CATEGORY_COOLDOWNS": "应用于触发法术所在类别中所有其他法术的冷却时间(毫秒)。使用-1以使用默认法术冷却时间。",
       "REQUIRED_FACTION": "能够使用物品所需的阵营,当引用所需的物品阵营ID时,它是选择器中左侧的'ID'列,更多信息请查看wiki中的'faction'。",
@@ -576,14 +576,14 @@
     },
     "GOSSIP_MENU_OPTION": {
       "OPTION_ID": "对于给定的menu_id必须从0开始唯一",
-      "OPTION_TEXT": "在玩家可选选项中显示的文本。例如:“学习双天赋”。仅当OptionBroadcastTextID包含有效的broadcast_text.ID时",
+      "OPTION_TEXT": "在玩家可选选项中显示的文本。例如:"学习双天赋"。仅当OptionBroadcastTextID包含有效的broadcast_text.ID时",
       "OPTION_BROADCAST_TEXT_ID": "broadcast_text.ID中相同文本的ID",
       "OPTION_NPC_FLAG": "引用creature_template.npcflag,这是NPC必须具有的npcflag",
       "ACTION_MENU_ID": "如果你想创建子菜单,这是要链接以创建该子菜单的ID(gossip_menu.entry / gossip_menu_option.menu_id)",
       "ACTION_POI_ID": "如果你想在小地图上显示POI(兴趣点)(就像城市守卫在你询问方向时放置标记一样),这是来自Points_of_interest.entry的`entry`",
       "BOX_CODED": "如果你想显示一个需要输入代码的框,这是你使用的字段",
       "BOX_MONEY": "玩家必须为所选选项支付的金额,值必须以铜币为单位。10金 = 100000 (10金 00银 00铜)",
-      "BOX_TEXT": "出现的窗口文本,有“是”或“否”作为可点击按钮。如果你想在脚本执行前有一个是/否确认窗口,这很有用",
+      "BOX_TEXT": "出现的窗口文本,有"是"或"否"作为可点击按钮。如果你想在脚本执行前有一个是/否确认窗口,这很有用",
       "BOX_BROADCAST_TEXT_ID": "broadcast_text.ID中相同文本的ID"
     }
   },
