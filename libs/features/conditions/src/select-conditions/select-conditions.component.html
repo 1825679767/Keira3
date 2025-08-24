@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="content-block">
     <div class="wiki-link mb-2">
-      <a [href]="WIKI_BASE_URL + 'conditions'" target="_blank"> <i class="fas fa-link"></i> 条件文档 </a>
+      <a [href]="WIKI_BASE_URL + 'conditions'" target="_blank"> <i class="fas fa-link"></i> conditions documentation </a>
     </div>
 
     <form [formGroup]="selectService.queryForm">
@@ -26,7 +26,7 @@
               type="number"
               class="form-control form-control-sm"
               id="SourceGroup"
-              placeholder="源组"
+              placeholder="SourceGroup"
             />
           </div>
         </div>
@@ -40,7 +40,7 @@
               type="number"
               class="form-control form-control-sm"
               id="SourceEntry"
-              placeholder="源条目"
+              placeholder="SourceEntry"
             />
           </div>
         </div>
@@ -48,7 +48,7 @@
       <div class="form-group row">
         <label class="col-sm-4 col-md-3 col-lg-2 col-form-label" for="limit" [translate]="'LIMIT'"></label>
         <div class="col-sm-4 col-md-3 col-lg-2">
-          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="限制" />
+          <input [formControlName]="'limit'" class="form-control form-control-sm" id="limit" placeholder="Limit" />
         </div>
         <div class="col-sm-12 col-md-6 mt-1 mt-md-0">
           <button id="search-btn" class="btn btn-primary btn-sm" [disabled]="selectService.queryForm.invalid" (click)="onSearch()">
@@ -82,16 +82,16 @@
           [offset]="selectService.pageOffset"
           (page)="onPage($event)"
         >
-          <ngx-datatable-column name="类型" prop="SourceTypeOrReferenceId" [minWidth]="60" />
-          <ngx-datatable-column name="组" prop="SourceGroup" />
-          <ngx-datatable-column name="条目" prop="SourceEntry" />
-          <ngx-datatable-column name="ID" prop="SourceId" />
-          <ngx-datatable-column name="条件类型" prop="ConditionTypeOrReference" />
-          <ngx-datatable-column name="条件目标" prop="ConditionTarget" />
-          <ngx-datatable-column name="条件值1" prop="ConditionValue1" />
-          <ngx-datatable-column name="条件值2" prop="ConditionValue2" />
-          <ngx-datatable-column name="条件值3" prop="ConditionValue3" />
-          <ngx-datatable-column name="负条件" prop="NegativeCondition" />
+          <ngx-datatable-column name="Type" prop="SourceTypeOrReferenceId" [minWidth]="60" />
+          <ngx-datatable-column name="Group" prop="SourceGroup" />
+          <ngx-datatable-column name="Entry" prop="SourceEntry" />
+          <ngx-datatable-column name="Id" prop="SourceId" />
+          <ngx-datatable-column name="CondType" prop="ConditionTypeOrReference" />
+          <ngx-datatable-column name="CondTarget" prop="ConditionTarget" />
+          <ngx-datatable-column name="CondValue1" prop="ConditionValue1" />
+          <ngx-datatable-column name="CondValue2" prop="ConditionValue2" />
+          <ngx-datatable-column name="CondValue3" prop="ConditionValue3" />
+          <ngx-datatable-column name="NegativeCond" prop="NegativeCondition" />
         </ngx-datatable>
       </div>
     }
